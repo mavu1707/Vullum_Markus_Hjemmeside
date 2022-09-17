@@ -36,6 +36,8 @@ section{
   grid-area: section;
   margin-bottom: 2rem;
   text-align: center;
+  background-color: #efefef;
+  padding-bottom: 20px;
 }
 
 section h2{
@@ -60,7 +62,7 @@ section p{
 
 main{
   grid-area: main;
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   background-color: #efefef;

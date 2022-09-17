@@ -10,7 +10,7 @@
 </head>
 <body>
   <div id="css-grid">
-    <header> <!--Header med innhold som logo menypunkter osv-->
+    <header class="img"> <!--Header med innhold som logo menypunkter osv-->
       <nav>
         <h2>Header</h2>
         <ul>
@@ -26,13 +26,13 @@
       <h2>Introtekst</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <div style="text-align:center"> <!-- Setter "kontakt oss" knappen i midten under teksten i section-->
-        <button id="kontakt-oss" onclick="#">Kontakt oss</button>
+        <button onclick="#">Kontakt oss</button>
       </div>
     </section>
     <main><!--Hovedinnholdet med bilder, overskrift, tekst og linker-->
       <section class="main-flex">
         <article>
-          <img class="placeholder" src="placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig-->
+          <img class="placeholder" src="placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
           <h3>Overskrift</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -40,7 +40,7 @@
           <a href="#">Les mer</a>
         </article>
         <article>
-          <img class="placeholder" src="placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig-->
+          <img class="placeholder" src="placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
           <h3>Overskrift</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -48,7 +48,7 @@
           <a href="#">Les mer</a>
         </article>
         <article>
-          <img class="placeholder" src="placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig-->
+          <img class="placeholder" src="placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
           <h3>Overskrift</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -58,10 +58,12 @@
       </section>
     </main>
     <footer><!--Bunn informasjon med Copyright og knapper -->
-      <p>Copyright Markus Vullum 2022</p>
-      <button>Hei</button>
-      <button>Test</button>
-      <button>Charmander</button>
+      <div class="footer-text">
+        <p>Copyright Markus Vullum 2022</p>
+        <button>Hei</button>
+        <button>Test</button>
+        <button>Charmander</button>
+    </div>
     </footer>
   </div>
 </body>

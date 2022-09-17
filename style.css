@@ -15,9 +15,18 @@ body{
   grid-template-columns: 1fr 3fr 1fr;
 }
 
+#logo{
+  width: 80px;
+  height: auto;
+}
+
 header{
   grid-area: header;
-  background-image: url("placeholder.jpg");
+  width: 100%;
+}
+
+.header-img{
+  background-image: url("img/header.jpg"); /*Bilde fra unsplas, attribute ikke nødvendig (https://unsplash.com/photos/j3c6FN11CkA)*/
 }
 
 header nav{
@@ -34,6 +43,7 @@ header nav li{
 
 section{
   grid-area: section;
+  width: 100%;
   margin-bottom: 2rem;
   text-align: center;
   background-color: #efefef;
@@ -62,9 +72,9 @@ section p{
 
 main{
   grid-area: main;
-  max-width: 1400px;
+  max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   background-color: #efefef;
   padding: 2rem;
 }
@@ -77,15 +87,13 @@ main article{
 
 footer{
   grid-area: footer;
-  padding: 60px;
-  background-color: rgb(80, 80, 80);
-  color: #fff;
-}
-
-.footer-text{
   display: flex;
   text-align: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 6rem;
+  background-color: rgb(80, 80, 80);
+  color: #fff;
 }
 
 button:hover{

@@ -10,15 +10,15 @@
 </head>
 <body>
   <div id="css-grid">
-    <header class="img"> <!--Header med innhold som logo menypunkter osv-->
+    <header class="header-img"> <!--Header med innhold som logo menypunkter osv-->
       <nav>
-        <h2>Header</h2>
+        <a href="hjemmeside.html"><img id="logo" src="img/logo.jpg" alt="placeholder logo"></a>
         <ul>
-          <li><a href="#">Hjem</a></li>
-          <li><a href="#">UU vs SEO</a></li>
-          <li><a href="#">CMS</a></li>
-          <li><a href="#">Analyse</a></li>
-          <li><a href="#">Kontakt oss</a></li>
+          <li><a href="hjemmeside.html">Hjem</a></li>
+          <li><a href="uu-vs-seo.html">UU vs SEO</a></li>
+          <li><a href="cms.html">CMS</a></li>
+          <li><a href="analyse.html">Analyse</a></li>
+          <li><a href="kontaktside.html">Kontakt oss</a></li>
         </ul>
       </nav>
     </header>
@@ -26,13 +26,15 @@
       <h2>Introtekst</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <div style="text-align:center"> <!-- Setter "kontakt oss" knappen i midten under teksten i section-->
-        <button onclick="#">Kontakt oss</button>
+        <a href="kontaktside.html">
+          <button>Kontakt oss</button>
+        </a>
       </div>
     </section>
     <main><!--Hovedinnholdet med bilder, overskrift, tekst og linker-->
       <section class="main-flex">
         <article>
-          <img class="placeholder" src="placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
+          <img class="placeholder" src="img/placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
           <h3>Overskrift</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -40,7 +42,7 @@
           <a href="#">Les mer</a>
         </article>
         <article>
-          <img class="placeholder" src="placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
+          <img class="placeholder" src="img/placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
           <h3>Overskrift</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -48,7 +50,7 @@
           <a href="#">Les mer</a>
         </article>
         <article>
-          <img class="placeholder" src="placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
+          <img class="placeholder" src="img/placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
           <h3>Overskrift</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -60,9 +62,15 @@
     <footer><!--Bunn informasjon med Copyright og knapper -->
       <div class="footer-text">
         <p>Copyright Markus Vullum 2022</p>
-        <button>Hei</button>
-        <button>Test</button>
-        <button>Charmander</button>
+        <a href="kontaktside.html">
+          <button>Kontakt oss</button>
+        </a>
+        <a href="hjelp.html">
+          <button>Hjelp</button>
+        </a>
+        <a href="faq.html">
+          <button>FAQ</button>
+        </a>
     </div>
     </footer>
   </div>

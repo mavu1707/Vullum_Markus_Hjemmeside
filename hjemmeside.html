@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nb"> <!--Det som blir skrevet i dokumentet og på hjemmesiden er Norsk Bokmål-->
+<head>
+  <meta charset="UTF-8"> <!--UTF-8 for at jeg kan skrive Æ, Ø, Å-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"><!--Fjerner mye unødvendig-->
+  <link rel="stylesheet" type="text/css" href="style.css"><!--Linker til CSS dokumentet mitt-->
+  <title>Deleksamen_2</title>
+</head>
+<body>
+  <div id="css-grid">
+    <header> <!--Header med innhold som logo menypunkter osv-->
+      <nav>
+        <h2>Header</h2>
+        <ul>
+          <li><a href="#">Hjem</a></li>
+          <li><a href="#">UU vs SEO</a></li>
+          <li><a href="#">CMS</a></li>
+          <li><a href="#">Analyse</a></li>
+          <li><a href="#">Kontakt oss</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section> <!--Seksjon før main med innholdstekst og knapp til "Kontakt Oss"-->
+      <h2>Introtekst</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div style="text-align:center"> <!-- Setter "kontakt oss" knappen i midten under teksten i section-->
+        <button id="kontakt-oss" onclick="#">Kontakt oss</button>
+      </div>
+    </section>
+    <main><!--Hovedinnholdet med bilder, overskrift, tekst og linker-->
+      <section class="main-flex">
+        <article>
+          <img class="placeholder" src="img/placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig-->
+          <h3>Overskrift</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <a href="#">Les mer</a>
+        </article>
+        <article>
+          <img class="placeholder" src="img/placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig-->
+          <h3>Overskrift</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <a href="#">Les mer</a>
+        </article>
+        <article>
+          <img class="placeholder" src="img/placeholder.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig-->
+          <h3>Overskrift</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <a href="#">Les mer</a>
+        </article>
+      </section>
+    </main>
+    <footer><!--Bunn informasjon med Copyright og knapper -->
+      <p>Copyright Markus Vullum 2022</p>
+      <button>Hei</button>
+      <button>Test</button>
+      <button>Charmander</button>
+    </footer>
+  </div>
+</body>
+</html>

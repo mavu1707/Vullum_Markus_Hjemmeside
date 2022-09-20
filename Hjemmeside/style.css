@@ -115,18 +115,22 @@ section{
   width: 100%;
   margin-bottom: 2rem;
   text-align: center;
-  background-color: #131313;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  background-color: #222121;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   color: #fff;
 }
 
-section h2{
+section h1{
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 section p{
   text-align: center;
+  width: auto;
 }
 
 /*This to meke the website compatible with smaller devices*/

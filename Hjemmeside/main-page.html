@@ -10,16 +10,18 @@
 <body>
   <div id="css-grid">
   <!--Navigation Bar for mobile devices-->
+  <header class="header-img">
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="#home" id="navbar-info">WebDesign</a>
+        <a href="main-page.html" id="navbar-info">WebDesign</a>
+        <!--https://pixabay.com/vectors/logo-penrose-triangle-impossible-1932539/-->
+        <a href="main-page.html"><img id="logo-pic" src="img/logo-pic.png" alt="Logo Bilde"></a>
         <!--The hamburger menu that appers for mobile devices-->
         <div class="navbar-toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
-
         <!--All the different Nav bar links/buttons-->
         <ul class="navbar-menu">
           <li class="navbar-item">
@@ -40,15 +42,44 @@
         </ul>
       </div>
     </nav>
+  </header>
 
     <!--Section-->
     <!--Legge inn i en div?-->
-    <section> <!--Start of section under navigation bar-->
+    <section class="intro"> <!--Start of section under navigation bar-->
       <h1>Introtekst</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </section> <!--End of the section under Navigation bar-->
 
     <!--Main-->
+    <main>
+      <section class="main-flex">
+        <article>
+          <img class="placeholder" src="img/placeholder-img.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
+          <h3>Overskrift</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <a href="#">Les mer</a>
+        </article>
+        <article>
+          <img class="placeholder" src="img/placeholder-img.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
+          <h3>Overskrift</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <a href="#">Les mer</a>
+        </article>
+        <article>
+          <img class="placeholder" src="img/placeholder-img.jpg" alt="placeholder bilde"> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
+          <h3>Overskrift</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <a href="#">Les mer</a>
+        </article>
+      </section>
+    </main>
 
 
     <!--Needed to add JS to make the mobile nav bar usable-->

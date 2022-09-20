@@ -19,9 +19,8 @@
   grid-template-columns: 1fr 3fr 1fr;
 }
 
-.navbar{
+header{
   grid-area: header;
-  background: #131313;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -32,9 +31,22 @@
   z-index: 999;
 }
 
+.header-img{
+  background-image: url(img/background-img.jpg);
+  width: 100%;
+}
+
+#logo-pic{
+  width: 80px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .navbar-container{
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -110,7 +122,7 @@
   transition: all 0.3s ease;
 }
 
-section{
+.intro{
   grid-area: section;
   width: 100%;
   margin-bottom: 2rem;
@@ -133,11 +145,50 @@ section p{
   width: auto;
 }
 
+.placeholder{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-flex{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+main{
+  grid-area: main;
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  padding: 2rem;
+  background-color: #131313;
+}
+
+main article{
+  background-color: #fff;
+  padding: 2rem;
+  flex: 1;
+}
+
+main h3 {
+  color: #131313;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+main p{
+  color: #131313;
+  margin-bottom: 1rem;
+}
 /*This to meke the website compatible with smaller devices*/
 /*All "settings" are decided inside here*/
 /*W3School.com*/
 @media screen and (max-width: 960px){
-  .navbar-container{
+  header{
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -160,8 +211,8 @@ section p{
   .navbar-menu.active{
     background: #131313;
     top: 100%;
+    width: auto;
     opacity: 1;
-    transform: all 0.5s ease;
     height: 60vh;
     font-size: 1.6rem;
   }

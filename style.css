@@ -41,7 +41,7 @@ header nav li{
   margin-right: 1rem;
 }
 
-section{
+section {
   grid-area: section;
   width: 100%;
   margin-bottom: 2rem;

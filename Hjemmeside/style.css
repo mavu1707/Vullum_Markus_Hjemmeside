@@ -201,7 +201,7 @@ main p{
     display: grid;
     grid-template-columns: auto;
     margin: 0;
-    width: 100%;
+    width: 100px;
     position: absolute;
     top: -1000px;
     opacity: 1;
@@ -211,7 +211,7 @@ main p{
   .navbar-menu.active{
     background: #131313;
     top: 100%;
-    width: auto;
+    width: 100vh;
     opacity: 1;
     height: 60vh;
     font-size: 1.6rem;

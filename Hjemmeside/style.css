@@ -37,6 +37,7 @@ header{
 }
 
 #logo-pic{
+  grid-area: header;
   width: 80px;
   height: auto;
   display: flex;
@@ -146,7 +147,7 @@ section p{
 }
 
 .placeholder{
-  width: 300px;
+  width: 400px;
   display: flex;
   justify-content: center;
 }

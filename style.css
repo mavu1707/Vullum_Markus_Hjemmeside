@@ -111,6 +111,23 @@ button{
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 @media screen and (max-widt: 600px){
   
 }
+=======
+/*
+@media and (max-width: 900px){
+  #css-grid{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+  }
+}
+
+*/
+>>>>>>> f5f43ac5893a683ad8268169a42a5b3970521ea7

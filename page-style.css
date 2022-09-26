@@ -20,9 +20,14 @@ body{
   grid-template-columns: 1fr 3fr 1fr;
 }
 
+/*Nav generell styling*/
 nav{
   grid-area: nav;
-  width: 100%;
+}
+
+/*Setter alle lister til å ikke ha prikkene ved siden av seg*/
+ul{
+  list-style: none;
 }
 
 /*Logo styling*/
@@ -32,21 +37,33 @@ nav{
   height: auto;
 }
 
-/*Nav generell styling*/
-nav{
-  grid-area: nav;
+/*Styling av selve nav baren*/
+.navbar{
   position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
-  list-style: none;
-  padding-top: 2rem;
+  justify-content: space-between;
+  padding-top: 1rem;
   align-items: center;
+}
+
+/*Styling av ul elementet*/
+ul.navbar-links{
+  display: flex;
+  align-items: center;
+}
+
+/*Styling av li elementene*/
+.navbar-links li{
+  margin-right: 3rem;
+  padding-right: 2rem;
 }
 
 /*Selve menypunktenes styling*/
 nav a{
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
   display: flex;
 }
@@ -54,7 +71,7 @@ nav a{
 /*Bestemmer header høyde, bredde og bakgrunnsbilde*/
 header{
   grid-area: header;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url('img/header.jpg');
   background-position: bottom;
@@ -66,7 +83,7 @@ header{
 
 /*Styler selve teksten i header*/
 .header-content{
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
   color: whitesmoke;
   text-align: center;
 }
@@ -80,12 +97,62 @@ header{
   text-decoration: none;
 }
 
+.fa-solid.fa-bars{
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  font-size: 1.8rem;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+/*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
 @media only screen and (max-width: 850px){
+  /*Grid områdene for mobil versjon*/
   #front-page-grid{
+    display: grid;
     grid-area: 
     "nav"
     "header"
     "main"
     "footer";
+    grid-template-columns: 1fr;
   }
+
+  /*Nav bar sitt grid området*/
+  nav{
+    grid-area: nav;
+  }
+
+  .navbar{
+    padding: 0;
+  }
+
+  /*Logo styling til mobil*/
+  #logo{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .navbar-links{
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: #cdb4db;
+    margin-top: -900px; /*900px*/
+  }
+
+  .fa-solid.fa-bars{
+    margin-top: 0px;
+  }
+
+  .navbar-links li{
+    padding: 0;
+    margin: 3rem auto;
+  }
+
+
 }

@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Normalize-->
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <!--Font Awsome (lettere måte å importere ikoner på)-->
+  <script src="https://kit.fontawesome.com/938105070d.js" crossorigin="anonymous"></script>
+  <!--Mitt CSS dokument-->
   <link rel="stylesheet" type="text/css" href="page-style.css">
   <title>Homepage</title>
 </head>
@@ -13,15 +17,16 @@
   <div id="front-page-grid">
     <!--Meny bar blir laget med logo og menypunkter-->
     <nav class="navbar">
-      <ul class="navbar-links"></ul>
         <a href="home-page.html"><img id="logo" src="img/logo-pic.png" alt="Logo ikon"></a><!--Laget selv-->
         <!--Her er alle menypunktene i navbar-->
+        <ul class="navbar-links">
         <li><a href="home-page.html">Hjem</a></li>
         <li><a href="uu-vs-seo.html">UU vs SEO</a></li>
         <li><a href="cms.html">CMS</a></li>
         <li><a href="analyse.html">Analyse</a></li>
         <li class="kontakt-oss"><a href="kontaktside.html">Kontakt oss</a></li>
       </ul>
+      <i class="fa-solid fa-bars"></i>
     </nav>
     <!--Starten på header. Inneholder: overskrift, ingress, knapp og bakgrunnsbilde-->
     <header>
@@ -32,5 +37,8 @@
       </div>
     </header>
   </div>
+
+  <!--Mitt JS dokument for hamburger meny-->
+  <script src="javascript.js"></script>
 </body>
 </html>

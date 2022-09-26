@@ -97,13 +97,45 @@ header{
   text-decoration: none;
 }
 
-.fa-solid.fa-bars{
-  position: absolute;
-  top: 3rem;
-  right: 0;
-  font-size: 1.8rem;
-  margin: 0 2rem;
-  cursor: pointer;
+/*Bildet til linkene styling*/
+.placeholder{
+  width: 300px;
+}
+
+/*Main blir stylet*/
+main{
+  grid-area: main;
+  width: 100%;
+  margin: auto;
+  background-color: #cdb4db;
+}
+
+/*Seksjonen til main som blir stylet*/
+.main-flex{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*Artikkel boksene blir stylet*/
+main article{
+  background-color: #fff;
+  padding: 2rem;
+  flex: 1;
+}
+
+/*Footer styling*/
+footer{
+  grid-area: footer;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 6rem;
+  background-color: rgb(80, 80, 80);
+  color: #fff;
 }
 
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
@@ -142,7 +174,6 @@ header{
     height: 100vh;
     justify-content: center;
     background-color: #cdb4db;
-    margin-top: -900px; /*900px*/
   }
 
   .fa-solid.fa-bars{

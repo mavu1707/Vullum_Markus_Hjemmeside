@@ -31,6 +31,10 @@ ul{
   list-style: none;
 }
 
+body, html{
+  overflow-x: hidden;
+}
+
 /*Logo styling*/
 #logo{
   grid-area: nav;
@@ -124,7 +128,7 @@ Source: https://www.w3schools.com/tags/tag_hr.asp*/
 
 /*Bildet til linkene styling*/
 .placeholder{
-  width: 300px;
+  width: 30rem;
 }
 
 /*Main blir stylet*/
@@ -132,10 +136,60 @@ main{
   grid-area: main;
   width: 100%;
   margin: auto;
-  background-color: #cdb4db;
 }
 
-/*Seksjonen til main som blir stylet*/
+/*Radene blir til flex*/
+.row{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  
+}
+
+/*Selve artikkelboksene blir stylet*/
+.row .col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.artikler .row{
+  margin-top: 2rem;
+}
+
+/*Hoved artikkelen blir stylet*/
+.main-artikel{
+  width: 100%;
+  height: 60vh;
+  padding-left: 6rem;
+  /*Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/vmTs5om50gg)*/
+  background-image: url('img/placeholder-2.jpg'); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/*Selve teksten i hoved artikkel blir stlyet*/
+.artikel-tekst{
+  width: 50%;
+  color: whitesmoke;
+}
+
+.artikel-tekst h3{
+  font-size: 4vmin;
+  margin-bottom: 1rem;
+}
+
+/*bildene i artikkelkortene blir stylet*/
+.placeholder{
+  width: 300px;
+}
+
+/*Seksjonen blir stylet*/
 .main-flex{
   display: flex;
   flex-direction: row;
@@ -144,7 +198,7 @@ main{
   flex-wrap: wrap;
 }
 
-/*Artikkel boksene blir stylet*/
+/*Artikklene blir stylet*/
 main article{
   background-color: #fff;
   padding: 2rem;
@@ -161,6 +215,25 @@ footer{
   padding: 6rem;
   background-color: rgb(80, 80, 80);
   color: #fff;
+}
+
+/*Bilde animasjoner*/
+img{
+  transition: transform .3s ease;
+}
+
+img:hover{
+  transform: scale(1.05);
+}
+
+/*Knappe animasjoner*/
+.kontakt-oss:hover{
+  opacity: 0.6;
+}
+
+/*Meny animasjoner*/
+li:hover{
+  color: #cdb4db;
 }
 
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
@@ -202,12 +275,26 @@ footer{
     background-color: #cdb4db;
   }
 
-  .fa-solid.fa-bars{
-    margin-top: 0px;
-  }
-
   .navbar-links li{
     padding: 0;
     margin: 3rem auto;
   }
+
+  .row{
+    flex-direction: column;
+  }
+
+  .row .col{
+    margin: 2rem auto;
+  }
+
+  .col img{
+    max-width: 90%;
+  }
+
+  .main-artikel{
+    width: 100%;
+  }
+
+
 }

@@ -128,7 +128,11 @@ Source: https://www.w3schools.com/tags/tag_hr.asp*/
 
 /*Bildet til linkene styling*/
 .placeholder{
-  width: 30rem;
+  border-radius: 2rem;
+}
+.placeholder-3{
+  width: 20rem;
+  border-radius: 2rem;
 }
 
 /*Main blir stylet*/

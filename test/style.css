@@ -209,7 +209,7 @@ footer{
     display: grid;
     grid-template-columns: auto;
     margin: 0;
-    width: 100px;
+    width: 100%;
     position: absolute;
     top: -1000px;
     opacity: 1;
@@ -219,7 +219,7 @@ footer{
   .navbar-menu.active{
     background: #131313;
     top: 100%;
-    width: 100vh;
+    width: 100vw;
     opacity: 1;
     height: 60vh;
     font-size: 1.6rem;
@@ -239,7 +239,6 @@ footer{
   }
   .navbar-links{
     text-align: center;
-    padding: 2rem;
     width: 100%;
     display: table;
   }

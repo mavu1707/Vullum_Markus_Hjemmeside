@@ -15,6 +15,7 @@ body{
   grid-template-areas: 
   "nav nav nav"
   "header header header"
+  "intro intro intro"
   "main main main"
   "footer footer footer";
   grid-template-columns: 1fr 3fr 1fr;
@@ -97,6 +98,30 @@ header{
   text-decoration: none;
 }
 
+/*Intro seksjonen blir stylet*/
+#intro-section{
+  grid-area: intro;
+  width: 80%;
+  margin: 80px auto;
+}
+
+/*Teksten til artikkel-seksjonen blir stylet*/
+.intro-title{
+  text-align: center;
+  font-size: 1.2rem;
+  color: #69c6e2;
+}
+
+/*Styling av linjen under "Artikkler"
+Source: https://www.w3schools.com/tags/tag_hr.asp*/
+.line{
+  width: 8rem;
+  height: 0.4rem;
+  background: #cdb4db;
+  margin: 2px auto;
+  border-radius: 10rem;
+}
+
 /*Bildet til linkene styling*/
 .placeholder{
   width: 300px;
@@ -138,28 +163,6 @@ footer{
   color: #fff;
 }
 
-/*Intro seksjonen blir stylet*/
-#intro-section{
-  width: 80%;
-  margin: 80px auto;
-}
-
-/*Teksten til artikkel-seksjonen blir stylet*/
-.intro-title{
-  text-align: center;
-  font-size: 1.2rem;
-  color: #69c6e2;
-  margin: 10px auto;
-  border-radius: 100px;
-}
-
-/*Styling av linjen under "Artikkler"*/
-.line{
-  width: 8rem;
-  height: 0.4rem;
-  background: #9a15e7;
-}
-
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
 @media only screen and (max-width: 850px){
   /*Grid områdene for mobil versjon*/
@@ -168,6 +171,7 @@ footer{
     grid-area: 
     "nav"
     "header"
+    "intro"
     "main"
     "footer";
     grid-template-columns: 1fr;
@@ -206,6 +210,4 @@ footer{
     padding: 0;
     margin: 3rem auto;
   }
-
-
 }

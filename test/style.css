@@ -32,7 +32,7 @@ header{
 }
 
 .header-img{
-  background-image: url(img/background-img.jpg);
+  background-image: url(header.jpg);
   width: 100%;
 }
 
@@ -125,7 +125,6 @@ header{
 
 .intro{
   grid-area: section;
-  width: 100%;
   margin-bottom: 2rem;
   text-align: center;
   background-color: #222121;
@@ -162,8 +161,8 @@ section p{
 
 main{
   grid-area: main;
-  max-width: 1600px;
   width: 100%;
+  max-width: 1200px;
   margin: auto;
   padding: 2rem;
   background-color: #131313;
@@ -184,6 +183,17 @@ main h3 {
 main p{
   color: #131313;
   margin-bottom: 1rem;
+}
+
+footer{
+  grid-area: footer;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 6rem;
+  background-color: rgb(80, 80, 80);
+  color: #fff;
 }
 /*This to meke the website compatible with smaller devices*/
 /*All "settings" are decided inside here*/

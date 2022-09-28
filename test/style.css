@@ -125,7 +125,6 @@ header{
 
 .intro{
   grid-area: section;
-  margin-bottom: 2rem;
   text-align: center;
   background-color: #222121;
   padding-bottom: 2rem;
@@ -161,13 +160,13 @@ section p{
 
 main{
   grid-area: main;
-  max-width: 1200px;
-  padding: 2rem;
+  width: 100%;
+  margin: 1rem auto;
   background-color: #131313;
 }
 
 main article{
-  background-color: #fff;
+  background-color: #c01d1d;
   padding: 2rem;
   flex: 1;
 }

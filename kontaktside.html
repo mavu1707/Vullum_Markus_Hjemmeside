@@ -4,39 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"><!--Fjerner mye unødvendig-->
-  <link rel="stylesheet" type="text/css" href="style.css"><!--Linker til CSS dokumentet mitt-->
-  <title>Document</title>
+  <!--Normalize-->
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <!--Font Awsome (lettere måte å importere ikoner på)-->
+  <script src="https://kit.fontawesome.com/938105070d.js" crossorigin="anonymous"></script>
+  <!--Mitt CSS dokument-->
+  <link rel="stylesheet" type="text/css" href="page-style.css">
+  <title>Kontaktside</title>
 </head>
 <body>
-  <header class="header-img"> <!--Header med innhold som logo menypunkter osv-->
-    <nav>
-      <a href="hjemmeside.html"><img id="logo" src="img/logo.jpg" alt="placeholder logo"></a>
-      <ul>
-        <li><a href="hjemmeside.html">Hjem</a></li>
+  <div id="front-page-grid">
+    <!--Meny bar blir laget med logo og menypunkter-->
+    <nav class="navbar">
+        <a href="home-page.html"><img id="logo" src="img/logo-pic.png" alt="Logo ikon"></a><!--Laget selv-->
+        <!--Her er alle menypunktene i navbar-->
+        <ul class="navbar-links">
+        <li><a href="home-page.html">Hjem</a></li>
         <li><a href="uu-vs-seo.html">UU vs SEO</a></li>
         <li><a href="cms.html">CMS</a></li>
         <li><a href="analyse.html">Analyse</a></li>
-        <li><a href="kontaktside.html">Kontakt oss</a></li>
+        <li class="kontakt-oss"><a href="kontaktside.html">Kontakt oss</a></li>
       </ul>
     </nav>
-  </header>
-  <main>
-    <h2>Kommer Snart</h2>
-  </main>
-  <footer><!--Bunn informasjon med Copyright og knapper -->
+    <!--Starten på header. Inneholder: overskrift, ingress, knapp og bakgrunnsbilde-->
+    <header>
+      <div class="header-content">
+        <h1>Velkommen til kontaktsiden</h1>
+        <h2>Denne vil snart være oppe å gå.</h2>
+        <a href="kontaktside.html" class="kontakt-oss">Kontakt Oss</a>
+      </div>
+    </header>
+  </div>
+  <!--Noe nytt som kommer snart-->
+  <section class="main-artikel">
+    <div class="artikel-tekst">
+      <h3>Her vil det komme noe veldig snart :)</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+    </div>
+  </section>
+  <!--Footer med copyright informasjon-->
+  <footer>
     <div class="footer-text">
       <p>Copyright Markus Vullum 2022</p>
-      <a href="kontaktside.html">
-        <button>Kontakt oss</button>
-      </a>
-      <a href="hjelp.html">
-        <button>Hjelp</button>
-      </a>
-      <a href="faq.html">
-        <button>FAQ</button>
-      </a>
-  </div>
+    </div>
   </footer>
 </body>
 </html>

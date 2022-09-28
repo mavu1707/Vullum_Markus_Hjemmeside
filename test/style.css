@@ -161,9 +161,7 @@ section p{
 
 main{
   grid-area: main;
-  width: 100%;
   max-width: 1200px;
-  margin: auto;
   padding: 2rem;
   background-color: #131313;
 }

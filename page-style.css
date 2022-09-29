@@ -60,6 +60,10 @@ ul.navbar-links{
   align-items: center;
 }
 
+/*Legger til hover effekt for navbar sine li elementer*/
+.navbar ul li:hover{
+  opacity: 0.5;
+}
 /*Styling av li elementene*/
 .navbar-links li{
   margin-right: 3rem;
@@ -239,6 +243,35 @@ img:hover{
 /*Meny animasjoner*/
 li:hover{
   color: #cdb4db;
+}
+
+/*Animasjon for "smooth-in & smooth-out"*/
+.artikler{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/*Animasjon for hoved informasjon*/
+.anim{
+  animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+  0%{
+    transform: translate(100px);
+    opacity: 0;
+  }
+  1000%{
+    transform: translate(0px);
+    opacity: 1;
+  }
 }
 
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/

@@ -10,22 +10,30 @@
   <script src="https://kit.fontawesome.com/938105070d.js" crossorigin="anonymous"></script>
   <!--Mitt CSS dokument-->
   <link rel="stylesheet" type="text/css" href="page-style.css">
+    <!--Javascript dokumentet, defer = kjører etter all html koden-->
+  <script defer src="javascript.js"></script>
   <title>CMS</title>
 </head>
 <body>
   <div id="front-page-grid">
     <!--Meny bar blir laget med logo og menypunkter-->
     <nav class="navbar">
-        <a href="home-page.html"><img id="logo" src="img/logo-pic.png" alt="Logo ikon"></a><!--Laget selv-->
-        <!--Her er alle menypunktene i navbar-->
-        <ul class="navbar-links">
-        <li><a href="home-page.html">Hjem</a></li>
-        <li><a href="uu-vs-seo.html">UU vs SEO</a></li>
-        <li><a href="cms.html">CMS</a></li>
-        <li><a href="analyse.html">Analyse</a></li>
-        <li class="kontakt-oss"><a href="kontaktside.html">Kontakt oss</a></li>
-      </ul>
-    </nav>
+      <a href="home-page.html"><img id="logo" src="img/logo-pic.png" alt="Logo ikon"></a><!--Laget selv-->
+      <!--Her er alle menypunktene i navbar-->
+      <ul class="navbar-links">
+      <li class="nav-item"><a href="home-page.html" class="nav-link">Hjem</a></li>
+      <li class="nav-item"><a href="uu-vs-seo.html" class="nav-link">UU vs SEO</a></li>
+      <li class="nav-item"><a href="cms.html" class="nav-link">CMS</a></li>
+      <li class="nav-item"><a href="analyse.html" class="nav-link">Analyse</a></li>
+      <li class="kontakt-oss nav-item"><a href="kontaktside.html" class="nav-link">Kontakt oss</a></li>
+    </ul>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
     <!--Starten på header. Inneholder: overskrift, ingress, knapp og bakgrunnsbilde-->
     <header>
       <div class="header-content">

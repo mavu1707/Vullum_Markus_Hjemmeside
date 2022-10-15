@@ -293,6 +293,17 @@ li:hover{
   line-height: 2.5rem;
 }
 
+.grid-ish{
+  display: flex;
+  background-color: #cdb4db;
+}
+
+.grid-ish > *{
+  flex: 1 1 1rem;
+}
+.colum{
+  color: #000000;
+}
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
 @media only screen and (max-width: 850px){
   /*Grid områdene for mobil versjon*/

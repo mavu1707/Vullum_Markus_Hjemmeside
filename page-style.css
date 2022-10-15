@@ -287,6 +287,13 @@ li:hover{
   transition: all 0.3s ease-in-out;
   background-color: whitesmoke;
 }
+
+.uuvsseo{
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
+
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
 @media only screen and (max-width: 850px){
   /*Grid områdene for mobil versjon*/

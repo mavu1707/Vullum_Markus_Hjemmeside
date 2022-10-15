@@ -293,7 +293,6 @@ li:hover{
   line-height: 2.5rem;
 }
 
-
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
 @media only screen and (max-width: 850px){
   /*Grid områdene for mobil versjon*/

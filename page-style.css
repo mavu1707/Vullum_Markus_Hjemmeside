@@ -226,11 +226,20 @@ footer{
 }
 
 /*Bilde animasjoner*/
-img{
+.placeholder{
   transition: transform .3s ease;
 }
 
-img:hover{
+.placeholder:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.placeholder-3{
+  transition: transform .3s ease;
+}
+
+.placeholder-3:hover{
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -241,7 +250,7 @@ img:hover{
 }
 
 /*Meny animasjoner*/
-li:hover{
+.nav-item:hover{
   color: #cdb4db;
 }
 
@@ -293,6 +302,11 @@ li:hover{
   line-height: 2.5rem;
 }
 
+.introtekst{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .grid-ish{
   display: flex;
   background-color: #cdb4db;
@@ -304,6 +318,24 @@ li:hover{
 .colum{
   color: #000000;
 }
+
+.container {
+  width: 400px;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper{
+  width: 80%;
+  height: fit-content;
+}
+
+.swiper-slide img{
+  width: 300px;
+}
+
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
 @media only screen and (max-width: 850px){
   /*Grid områdene for mobil versjon*/

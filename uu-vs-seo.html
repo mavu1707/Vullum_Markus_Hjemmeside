@@ -12,6 +12,7 @@
     <!--Javascript dokumentet, defer = kjører etter all html koden-->
   <script defer src="javascript.js"></script>
   <title>UU vs SEO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
   <div id="front-page-grid">
@@ -45,7 +46,7 @@
   <section class="main-artikel">
     <div class="artikel-tekst">
       <h3>UU vs SEO</h3>
-          <p>
+          <p class="introtekst">
             Hva er UU og SEO, UU står for universell utforming, mens SEO står for søkemotoroptimalisering. Men hva er det det egentlig betyr, da må vi se nærmere på hvert enkelt begrep og hva det gjør for nettsiden din.
           </p>
     </div>
@@ -62,6 +63,24 @@
         <p class="uuvsseo">
           I Norge har vi noe som heter uutilsynet, deres oppgave er å passe på at alle nettsider og it systemer oppfyller kravene for nettløsninger og selvbetjeningsautomater rundt om i landet (uutilsynet (a), 2022). De sier på sin nettside at dersom en persons forutsetning ikke samsvarer med samfunnets forventninger, oppstår det et gap mellom forutsetninger og krav (uutilsynet (b), 2022). Hvis dette var vanskelig og forstå skal jeg vise det for deg visuelt.
         </p>
+        <div class="container">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="https://prod-images.tcm.com/Master-Profile-Images/LeonardoDiCaprio.jpg"></div>
+              <div class="swiper-slide"><img src="img/placeholder-3.jpg"></div>
+              <div class="swiper-slide"><img src="img/placeholder.jpg"></div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
 
         <p class="uuvsseo">
           I bunn og grunn handler universell utforming om hvor brukervennlig nettsiden din er, er den kompatibel på både desktop, nettbrett og mobil. Hvordan er den å bruke for de som er svaksynte, fargeblinde osv. Det at noe er fint å se på kan være viktig for deg som designer, men for en som er blind er ikke det like viktig. Derfor er det viktig at alle har muligheten, selv om de som trenger den ekstra hjelpen er i fåtall. 
@@ -156,13 +175,13 @@
   </div>
   <div class="grid-ish">
     <div class="colum">UU</div>
-    <div class="colum">SEO</div>
+    <div class="colum"></div>
     <div class="colum">UU</div>
     <div class="colum">SEO</div>
   </div>
   <div class="grid-ish">
-    <div class="colum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-    <div class="colum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+    <div class="colum">SEO</div>
+    <div class="colum">TESTER</div>
     <div class="colum">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
   </div>
 
@@ -172,5 +191,7 @@
       <p>Copyright Markus Vullum 2022</p>
     </div>
   </footer>
+  <!--Hentet fra: https://swiperjs.com/get-started-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

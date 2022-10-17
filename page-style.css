@@ -297,28 +297,19 @@ footer{
   background-color: whitesmoke;
 }
 
+/*UU artikkel*/
 .uuvsseo{
   font-size: 1.4rem;
   line-height: 2.5rem;
 }
 
+/*Intro teksten som står øverst*/
 .introtekst{
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.grid-ish{
-  display: flex;
-  background-color: #cdb4db;
-}
-
-.grid-ish > *{
-  flex: 1 1 1rem;
-}
-.colum{
-  color: #000000;
-}
-
+/*Selve artikkelen sin styling*/
 .container {
   width: 400px;
   background: #000000;
@@ -327,6 +318,7 @@ footer{
   justify-content: center;
 }
 
+/*Swiper boksen blir laget*/
 .swiper{
   width: 80%;
   height: fit-content;
@@ -336,98 +328,106 @@ footer{
   width: 300px;
 }
 
-section #table{
-  background-color: #F3EADB;
-  border: 2px solid #35291f;
-  border-radius: 10px;
-  margin: 1px;
+/*Tabellen til UU vs SEO*/
+#tabell{
   display: flex;
-  text-align: center;
+  justify-content: center;
   align-items: center;
 }
 
-#table{
+/*Styling på tabellen*/
+.table{
   display: grid;
   margin: 0 auto;
   max-width: 900px;
   width: 100%;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(10, 1fr);
   min-height: 900px;
+  background-color:#69c6e2;
+  color: #000000;
+  font-size: 1.3rem;
 }
 
+/*Alle cellene som er på rad 1*/
 #cell-1{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: 1;
+  grid-column-end: 1;
+  background: aquamarine;
+}
+
+#cell-2{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: 2;
+  grid-column-end: 2;
+  background: rgb(204, 127, 255);
+}
+
+#cell-3{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: 3;
+  grid-column-end: 3;
+  background: aquamarine;
+}
+
+#cell-4{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: 4;
+  grid-column-end: 4;
+  background: rgb(204, 127, 255);
+}
+/*Slutt på celler på rad 1*/
+
+/*SEO og UU som er på kolonne 1*/
+#cell-5{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column: 1;
+  grid-column-end: 1;
+  background: rgb(204, 127, 255);
+}
+
+#cell-6{
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column: 1;
   grid-column-end: 1;
-  background: #000000;
-}
-
-#cell-2{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column: 1;
-  grid-column-end: 1;
-}
-
-#cell-3{
-  grid-row-start: 5;
-  grid-row-end: 6;
-  grid-column: 1;
-  grid-column-end: 1;
-}
-
-#cell-4{
-  grid-row-start: 5;
-  grid-row-end: 6;
-  grid-column: 2;
-  grid-column-end: 2;
-}
-
-#cell-5{
-  grid-row-start: 5;
-  grid-row-end: 6;
-  grid-column: 3;
-  grid-column-end: 3;
-}
-
-/*Avsporing*/
-
-#cell-6{
-  grid-row-start: 6;
-  grid-row-end: 7;
-  grid-column: 3;
-  grid-column-end: 3;
+  background: aquamarine;
 }
 
 #cell-7{
-  grid-row-start: 7;
-  grid-row-end: 8;
-  grid-column: 3;
-  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column: 1;
+  grid-column-end: 1;
+  background: rgb(204, 127, 255);
 }
 
 #cell-8{
-  grid-row-start: 8;
-  grid-row-end: 9;
-  grid-column: 3;
-  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column: 1;
+  grid-column-end: 1;
+  background: aquamarine;
 }
 
 #cell-9{
-  grid-row-start: 9;
-  grid-row-end: 10;
-  grid-column: 3;
-  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column: 1;
+  grid-column-end: 1;
 }
-/*Slutt på avsporing*/
 
 #cell-10{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column: 3;
-  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column: 1;
+  grid-column-end: 1;
 }
 
 #cell-11{
@@ -444,8 +444,6 @@ section #table{
   grid-column-end: 5;
 }
 
-/*Avsporing*/
-
 #cell-13{
   grid-row-start: 3;
   grid-row-end: 4;
@@ -460,7 +458,6 @@ section #table{
   grid-column-end: 5;
 }
 
-/*Slutt på avsporing*/
 
 #cell-15{
   grid-row-start: 5;
@@ -490,7 +487,6 @@ section #table{
   grid-column-end: 7;
 }
 
-/*Avsporing*/
 
 #cell-19{
   grid-row-start: 7;
@@ -499,7 +495,6 @@ section #table{
   grid-column-end: 7;
 }
 
-/*Slutt på avsporing*/
 
 #cell-20{
   grid-row-start: 6;

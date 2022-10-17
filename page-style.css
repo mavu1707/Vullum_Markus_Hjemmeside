@@ -335,7 +335,19 @@ footer{
   align-items: center;
 }
 
-/*Styling på tabellen*/
+/*stlying på klassene*/
+.tabell-styling{
+  background-color: #cdb4db;
+  border: 3px solid #000000;
+  border-radius: 15px;
+  margin: 2px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+/*Styling på tabellen generelt*/
 .table{
   display: grid;
   margin: 0 auto;
@@ -344,7 +356,6 @@ footer{
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(10, 1fr);
   min-height: 900px;
-  background-color:#69c6e2;
   color: #000000;
   font-size: 1.3rem;
 }
@@ -355,7 +366,6 @@ footer{
   grid-row-end: 1;
   grid-column: 1;
   grid-column-end: 1;
-  background: aquamarine;
 }
 
 #cell-2{
@@ -363,7 +373,6 @@ footer{
   grid-row-end: 1;
   grid-column: 2;
   grid-column-end: 2;
-  background: rgb(204, 127, 255);
 }
 
 #cell-3{
@@ -371,7 +380,6 @@ footer{
   grid-row-end: 1;
   grid-column: 3;
   grid-column-end: 3;
-  background: aquamarine;
 }
 
 #cell-4{
@@ -379,7 +387,6 @@ footer{
   grid-row-end: 1;
   grid-column: 4;
   grid-column-end: 4;
-  background: rgb(204, 127, 255);
 }
 /*Slutt på celler på rad 1*/
 
@@ -389,7 +396,6 @@ footer{
   grid-row-end: 3;
   grid-column: 1;
   grid-column-end: 1;
-  background: rgb(204, 127, 255);
 }
 
 #cell-6{
@@ -397,7 +403,6 @@ footer{
   grid-row-end: 4;
   grid-column: 1;
   grid-column-end: 1;
-  background: aquamarine;
 }
 
 #cell-7{
@@ -405,7 +410,6 @@ footer{
   grid-row-end: 5;
   grid-column: 1;
   grid-column-end: 1;
-  background: rgb(204, 127, 255);
 }
 
 #cell-8{
@@ -413,7 +417,6 @@ footer{
   grid-row-end: 6;
   grid-column: 1;
   grid-column-end: 1;
-  background: aquamarine;
 }
 
 #cell-9{

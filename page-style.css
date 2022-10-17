@@ -329,15 +329,15 @@ footer{
 }
 
 /*Tabellen til UU vs SEO*/
-#tabell{
+.tabell{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .tabell-farge{
-  color: #cdb4db;
-  background-color: slategray;
+  color: #ffffff;
+  background-color: rgb(143, 146, 148);
 }
 
 /*stlying på klassene*/
@@ -353,16 +353,18 @@ footer{
 /*Styling på tabellen generelt*/
 .table{
   display: grid;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 900px;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   min-height: 900px;
   font-size: 1.3rem;
-  
+  margin-bottom: 2rem;
 }
 
+/*UU start*/
 /*Alle cellene som er på rad 1*/
 #cell-1{
   grid-row-start: 1;
@@ -521,51 +523,156 @@ footer{
   grid-column-end: 3;
 }
 
-/*Rad 7*/
+/*SEO*/
 #cell-22{
-  grid-row-start: 8;
-  grid-row-end: 9;
-  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: 1;
   grid-column-end: 1;
-
+  background-color: slategray;
 }
 
 #cell-23{
-  grid-row-start: 9;
-  grid-row-end: 8;
-  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: 2;
   grid-column-end: 2;
+  background-color: slategray;
 }
 
 #cell-24{
-  grid-row-start: 9;
-  grid-row-end: 8;
-  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: 3;
   grid-column-end: 3;
+  background-color: slategray;
 }
 
-/*Rad 8*/
 #cell-25{
-  grid-row-start: 9;
-  grid-row-end: 10;
-  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column: 1;
   grid-column-end: 1;
 }
 
 #cell-26{
-  grid-row-start: 9;
-  grid-row-end: 10;
-  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column: 2;
   grid-column-end: 2;
 }
 
 #cell-27{
-  grid-row-start: 9;
-  grid-row-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column: 3;
+  grid-column-end: 3;
+}
+
+#cell-28{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column: 1;
+  grid-column-end: 1;
+}
+
+#cell-29{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column: 2;
+  grid-column-end: 2;
+}
+
+#cell-30{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column: 3;
+  grid-column-end: 3;
+}
+
+#cell-31{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column: 1;
+  grid-column-end: 1;
+}
+
+#cell-32{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column: 2;
+  grid-column-end: 2;
+}
+
+#cell-33{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column: 3;
+  grid-column-end: 3;
+}
+
+#cell-34{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column: 1;
+  grid-column-end: 1;
+}
+
+#cell-35{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#cell-36{
+  grid-row-start: 5;
+  grid-row-end: 6;
   grid-column-start: 3;
   grid-column-end: 3;
 }
 
+#cell-37{
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#cell-38{
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#cell-39{
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+#cell-40{
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 1;
+  grid-column-end:1;
+}
+
+#cell-41{
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#cell-42{
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
 
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
 @media only screen and (max-width: 850px){

@@ -336,6 +336,92 @@ footer{
   width: 300px;
 }
 
+#tabel-section{
+  display: grid;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  min-height: 900px;
+}
+#cell-1{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column: 1;
+  grid-column-end: 1;
+}
+
+#cell-2{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column: 1;
+  grid-column-end: 1;
+}
+
+#cell-3{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column: 2;
+  grid-column-end: 2;
+}
+
+#cell-4{
+
+}
+
+#cell-5{
+
+}
+
+/*Avsporing*/
+
+#cell-6{
+
+}
+
+#cell-7{
+
+}
+
+#cell-8{
+
+}
+
+#cell-9{
+
+}
+/*Slutt på avsporing*/
+
+#cell-10{
+
+}
+
+#cell-11{
+
+}
+
+#cell-12{
+
+}
+
+/*Avsporing*/
+
+#cell-13{
+
+}
+
+#cell-14{
+
+}
+
+/*Slutt på avsporing*/
+
+#cell-15{
+
+}
+
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
 @media only screen and (max-width: 850px){
   /*Grid områdene for mobil versjon*/

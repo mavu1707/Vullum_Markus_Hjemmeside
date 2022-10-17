@@ -761,11 +761,30 @@ footer{
 
   .table{
     display: block;
+    padding: 0 !important;
+    font-size: 1.2rem;
+  }
+
+  .uuvsseo{
+    flex-wrap: wrap;
+    font-size: 1rem;
+    line-height: 1.8rem;
   }
 
   body {
     height: 100%;
     width: 100%;
     overflow: hidden;
+  }
+  .artikel-tekst h3{
+    font-size: 2rem;
+  }
+  .introtekst{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  footer{
+    font-size: 1.5rem;
   }
 }

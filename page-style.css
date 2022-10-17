@@ -759,4 +759,7 @@ footer{
     width: 100%;
   }
 
+  .table{
+    display: block;
+  }
 }

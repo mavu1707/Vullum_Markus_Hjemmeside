@@ -188,7 +188,7 @@ main{
 }
 
 .artikel-tekst h3{
-  font-size: 4vmin;
+  font-size: 5rem;
   margin-bottom: 1rem;
 }
 
@@ -299,6 +299,7 @@ footer{
 
 /*UU artikkel*/
 .uuvsseo{
+  grid-area: "main";
   font-size: 1.4rem;
   line-height: 2.5rem;
 }
@@ -757,4 +758,5 @@ footer{
   .main-artikel{
     width: 100%;
   }
+
 }

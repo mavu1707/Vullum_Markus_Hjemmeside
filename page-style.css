@@ -762,4 +762,8 @@ footer{
   .table{
     display: block;
   }
+
+  p{
+    width: 100%;
+  }
 }

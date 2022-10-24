@@ -30,19 +30,3 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   hamburger.classList.remove("active")
   navbarLinks.classList.remove("active")
 }))
-
-//Bilde Swiper
-//Hentet fra: https://swiperjs.com/get-started
-const swiper = new Swiper('.swiper', {
-  loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  }, 
-});

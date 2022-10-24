@@ -4,13 +4,17 @@
 /*Font familie Josefin Sans, hentet fra google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@400;500;700&display=swap');
 
+body, html{
+  overflow-x: hidden;
+}
+
 /*I alle body elementene skal denne fonten brukes til all tekst*/
 body{
   font-family: 'Josefin Sans', sans-serif;
 }
 
 /*Lager grid området til alle elementene mine*/
-#front-page-grid{
+#grid-area{
   display: grid;
   grid-template-areas: 
   "nav nav nav"
@@ -26,13 +30,22 @@ nav{
   grid-area: nav;
 }
 
+/*Bestemmer header høyde, bredde og bakgrunnsbilde*/
+header{
+  grid-area: header;
+  width: 100%;
+  height: 100vh;
+  background-image: url('img/header.jpg');
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*Setter alle lister til å ikke ha prikkene ved siden av seg*/
 ul{
   list-style: none;
-}
-
-body, html{
-  overflow-x: hidden;
 }
 
 /*Logo styling*/
@@ -77,19 +90,6 @@ nav a{
   display: flex;
 }
 
-/*Bestemmer header høyde, bredde og bakgrunnsbilde*/
-header{
-  grid-area: header;
-  width: 100%;
-  height: 100vh;
-  background-image: url('img/header.jpg');
-  background-position: bottom;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /*Styler selve teksten i header*/
 .header-content{
   margin-bottom: 10rem;
@@ -116,7 +116,7 @@ header{
 /*Teksten til artikkel-seksjonen blir stylet*/
 .intro-title{
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #69c6e2;
 }
 
@@ -363,6 +363,18 @@ footer{
   min-height: 900px;
   font-size: 1.3rem;
   margin-bottom: 2rem;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+article{
+  text-align: center;
 }
 
 /*UU start*/
@@ -678,7 +690,7 @@ footer{
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
 @media only screen and (max-width: 850px){
   /*Grid områdene for mobil versjon*/
-  #front-page-grid{
+  #grid-area{
     display: grid;
     grid-area: 
     "nav"

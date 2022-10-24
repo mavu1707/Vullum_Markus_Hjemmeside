@@ -14,7 +14,6 @@ const artikler = document.querySelectorAll('.artikler');
 
 artikler.forEach((el) => observer.observe(el))
 
-
 /* Hentet fra: https://www.youtube.com/watch?v=flItyHiDm7E&t=205s*/
 const hamburger = document.querySelector('.hamburger')
 const navbarLinks = document.querySelector('.navbar-links')

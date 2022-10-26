@@ -411,7 +411,7 @@ footer{
 
 /*Tabell styling generelt*/
 .tabell-topp{
-  background-color: lightgray;
+  background-color: rgb(165, 165, 165);
 }
 
 .tabell-styling{
@@ -422,6 +422,10 @@ footer{
   font-size: 1.4rem;
   line-height: 1.6rem;
   border: 2px solid #000000;
+}
+
+.zebra{
+  background-color: rgb(201, 201, 201);
 }
 
 
@@ -447,6 +451,7 @@ footer{
 
   /*Hamburgermeny blir laget*/
   .hamburger{
+    grid-area: nav;
     display: block;
     margin: 1rem;
     cursor: pointer; /*Lettere å se på desktop*/
@@ -476,7 +481,11 @@ footer{
   }
 
   .nav-item{
-    margin: 16px 0;
+    margin: 0.3rem 0;
+  }
+  
+  .anim{
+    margin-top: 20rem;
   }
 
   .navbar-links.active{
@@ -499,7 +508,8 @@ footer{
   }
 
   .row .col{
-    margin: 2rem auto;
+    margin: none;
+    padding: 0;
   }
 
   .col img{
@@ -510,10 +520,19 @@ footer{
     width: 100%;
   }
 
-  .table{
+  .cms-tabell{
     display: block;
-    padding: 0 !important;
     font-size: 1.2rem;
+    overflow: scroll;
+  }
+  .uu-seo-tabell{
+    display: block;
+    font-size: 1.2rem;
+    overflow: scroll;
+  }
+
+  .tabell-styling{
+    text-align: left;
   }
 
   body {
@@ -525,18 +544,27 @@ footer{
   .introtekst{
     font-size: 1rem;
     line-height: 1.5rem;
+    margin: 0;
+    text-align: left;
   }
 
   footer{
     font-size: 1.5rem;
   }
 
+  p{
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
   .artikkel-tekst{
     margin-left: 1rem;
     margin-right: 1rem;
     line-height: 2.2rem;
   }
-
+  section ol{
+    padding: 0;
+    margin: 1rem auto;
+  }
   li{
     text-align: center;
   }

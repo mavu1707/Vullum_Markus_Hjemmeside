@@ -8,12 +8,40 @@ body, html{
   overflow-x: hidden;
 }
 
-/*I alle body elementene skal denne fonten brukes til all tekst*/
+/*På body elementet skal disse styling elementene bli tatt i bnruk*/
 body{
   font-family: 'Josefin Sans', sans-serif;
+  line-height: auto;
 }
 
-/*Lager grid området til alle elementene mine*/
+/*Genrell styling på elementer*/
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2.2rem;
+}
+
+h3{
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+article{
+  text-align: center;
+}
+
+p{
+  font-size: 1.4rem;
+}
+
+nav{
+  grid-area: nav;
+  font-size: 1.2rem;
+}
+
+/*Lager grid området*/
 #grid-area{
   display: grid;
   grid-template-areas: 
@@ -25,12 +53,7 @@ body{
   grid-template-columns: 1fr 3fr 1fr;
 }
 
-/*Nav generell styling*/
-nav{
-  grid-area: nav;
-}
-
-/*Bestemmer header høyde, bredde og bakgrunnsbilde*/
+/*Header styling*/
 header{
   grid-area: header;
   width: 100%;
@@ -43,8 +66,13 @@ header{
   justify-content: center;
 }
 
-/*Setter alle lister til å ikke ha prikkene ved siden av seg*/
+/*Fjerner prikker ved siden av liste-elementer*/
 ul{
+  list-style: none;
+}
+
+/*Fjerner tall ved siden av liste-elementer*/
+ol{
   list-style: none;
 }
 
@@ -67,7 +95,7 @@ ul{
   align-items: center;
 }
 
-/*Styling av ul elementet*/
+/*Styling av nav bar*/
 ul.navbar-links{
   display: flex;
   align-items: center;
@@ -77,6 +105,7 @@ ul.navbar-links{
 .navbar ul li:hover{
   opacity: 0.5;
 }
+
 /*Styling av li elementene*/
 .navbar-links li{
   margin-right: 3rem;
@@ -116,7 +145,6 @@ nav a{
 /*Teksten til artikkel-seksjonen blir stylet*/
 .intro-title{
   text-align: center;
-  font-size: 1.4rem;
   color: #69c6e2;
 }
 
@@ -188,7 +216,6 @@ main{
 }
 
 .artikel-tekst h3{
-  font-size: 5rem;
   margin-bottom: 1rem;
 }
 
@@ -262,6 +289,10 @@ footer{
   transition: all 1s;
 }
 
+.artikler p{
+  max-width: 60%;
+}
+
 .show{
   opacity: 1;
   filter: blur(0);
@@ -297,17 +328,10 @@ footer{
   background-color: whitesmoke;
 }
 
-/*UU artikkel*/
-.uuvsseo{
-  grid-area: "main";
-  font-size: 1.4rem;
-  line-height: 2.5rem;
-}
-
 /*Intro teksten som står øverst*/
 .introtekst{
-  font-size: 1.5rem;
   line-height: 2rem;
+  max-width: 70%;
 }
 
 /*Selve artikkelen sin styling*/
@@ -363,18 +387,6 @@ footer{
   min-height: 900px;
   font-size: 1.3rem;
   margin-bottom: 2rem;
-}
-
-h2{
-  text-align: center;
-}
-
-h3{
-  text-align: center;
-}
-
-article{
-  text-align: center;
 }
 
 /*UU start*/
@@ -779,7 +791,6 @@ article{
 
   .uuvsseo{
     flex-wrap: wrap;
-    font-size: 1rem;
     line-height: 1.8rem;
   }
 
@@ -788,9 +799,7 @@ article{
     width: 100%;
     overflow: hidden;
   }
-  .artikel-tekst h3{
-    font-size: 2rem;
-  }
+
   .introtekst{
     font-size: 1rem;
     line-height: 1.5rem;

@@ -50,39 +50,39 @@
   <!--Noe nytt som kommer snart-->
   <section itemscope itemtype="https://schema.org/Article" class="main-artikel">
     <div class="artikel-tekst">
-      <h2>UU vs SEO</h2>
+      <h2 itemprop="name">UU vs SEO</h2>
           <p itemprop="description" class="introtekst">
             UU og SEO er hvordan nettsiden din er satt opp på best mulig og tilgjengelige måte.
           </p>
-          <p class="skrevet-av">
+          <p itemprop="author" class="skrevet-av">
             Skrevet av Markus Vullum
           </p>
     </div>
   </section>
   <!--Artikkelen for UU begynner-->
   <article itemscope itemtype="https://schema.org/Article" class="artikkel-tekst">
-    <h2>UU</h2>
-    <p itemprop="articleBody">
+    <h2 itemprop="name">UU</h2>
+    <p itemprop="description">
       Universell utforming handler om hvordan nettsiden din er satt opp på best mulig måte. Tenk på det som en boligblokk som har mange etasjer, men kun har trapper for å komme seg til øverste etasje. Da blir det veldig vanskelig for noen som er i rullestol eller krykker å bo der (med mindre de bor i 1 etasje). Det er det Universell utforming handler om. Hvor lett tilgjengelig er innholdet på en nettside for en som f.eks er fargeblind, ikke kan bruke mus, sliter med synet osv.
     </p>
 
-    <p itemprop="articleBody">
+    <p itemprop="description">
       I Norge har vi noe som heter uutilsynet, deres oppgave er å passe på at alle nettsider og it systemer oppfyller kravene for nettløsninger og selvbetjeningsautomater rundt om i landet (uutilsynet (a), 2022). De sier på sin nettside at dersom en persons forutsetning ikke samsvarer med samfunnets forventninger, oppstår det et gap mellom forutsetninger og krav (uutilsynet (b), 2022). Hvis dette var vanskelig og forstå skal jeg vise det for deg visuelt.
     </p>
 
-    <p itemprop="text">
+    <p itemprop="description">
       I bunn og grunn handler universell utforming om hvor brukervennlig nettsiden din er, er den kompatibel på både desktop, nettbrett og mobil. Hvordan er den å bruke for de som er svaksynte, fargeblinde osv. Det at noe er fint å se på kan være viktig for deg som designer, men for en som er blind er ikke det like viktig. Derfor er det viktig at alle har muligheten, selv om de som trenger den ekstra hjelpen er i fåtall. 
     </p>
   </article>
 <!--Sluuten på UU artikkel-->
 
 <!--Starten på tabellen over UU og SEO fordeler/ulemper-->
-<section class="uu-seo-tabell">
+<section itemscope itemtype="https://schema.org/Table" class="uu-seo-tabell">
   <div class="tabell-styling tabell-topp"></div>
-  <div class="tabell-styling tabell-topp">Fordeler</div>
-  <div class="tabell-styling tabell-topp">Ulemper</div>
+  <div itemprop="about" class="tabell-styling tabell-topp">Fordeler</div>
+  <div itemprop="about" class="tabell-styling tabell-topp">Ulemper</div>
 
-  <div class="tabell-styling">UU - HTML struktur</div>
+  <div itemprop="about" class="tabell-styling">UU - HTML struktur</div>
   <div class="tabell-styling">
     At HTML strukturen er satt opp på riktig måte, slik at opplesningsverktøy får en lettere jobb (Akerbæk, 2022, UU)
   </div>
@@ -90,7 +90,7 @@
     Opplesningsverktøy sliter med å lese opp nettsiden din.
   </div>
 
-  <div class="tabell-styling zebra">
+  <div itemprop="about" class="tabell-styling zebra">
     UU - alt taggen
   </div>
   <div class="tabell-styling zebra">
@@ -100,7 +100,7 @@
     Svaksynte og blinde kan ikke se et bilde som er på nettsiden. Hvis et bilde er veldig viktig for konteksten blir dette vanskelig å forstå.
   </div>
 
-  <div class="tabell-styling">
+  <div itemprop="about" class="tabell-styling">
     UU - HTML lang taggen
   </div>
   <div class="tabell-styling">
@@ -110,7 +110,7 @@
     Opplesningsverktøyet kan begynne å lese opp nettsiden på en “norsk-engelsk” aksent.  
   </div>
 
-  <div class="tabell-styling zebra">
+  <div itemprop="about" class="tabell-styling zebra">
     UU - Fargebruk i CSS
   </div>
   <div class="tabell-styling zebra">
@@ -120,7 +120,7 @@
     Innhold på siden kan bli helt uleselig for enkeltpersoner.
   </div>
 
-  <div class="tabell-styling">
+  <div itemprop="about" class="tabell-styling">
     UU - Mobile first
   </div>
   <div class="tabell-styling">
@@ -130,7 +130,7 @@
     Personer som vil ta i bruk nettsiden får ikke dette til pga den er kun tilpasset desktop besøkende. 
   </div>
 
-  <div class="tabell-styling zebra">
+  <div itemprop="about" class="tabell-styling zebra">
     UU - Attributten roles
   </div>
   <div class="tabell-styling zebra">
@@ -142,16 +142,16 @@
 </section>
 
   <!--Litteraturliste-->
-<section class="lit-liste">
-  <h3>Litteraturliste</h3>
+<section itemscope itemtype="https://schema.org/ItemList" class="lit-liste">
+  <h3 itemprop="name">Litteraturliste</h3>
   <ol>
-    <li>
+    <li itemprop="itemListElement">
       Uutilsynet (b). (2022). Hvorfor universell utforming av ikt. I uutilsynet. Hentet 13. Oktober 2022 fra https://www.uutilsynet.no/veiledning/kvifor-universell-utforming-av-ikt/240
     </li>
-    <li>
+    <li itemprop="itemListElement">
       Uutilsynet (a). (2022). Oppgaver. I uutilsynet. Hentet 13. Oktober 2022 fra https://www.uutilsynet.no/om-oss/oppgaver/279
     </li>
-    <li>
+    <li itemprop="itemListElement">
       Akerbæk, T. M. (2022). Avdeling for Informatikk, Høgskolen i Østfold.
     </li>
   </ol>
@@ -159,57 +159,59 @@
 
 <!--starten på SEO artikkel-->
   <article itemscope itemtype="https://schema.org/Article" class="artikkel-tekst">
-    <h2>SEO</h2>
-    <p itemprop="articleBody">
+    <h2 itemprop="name">SEO</h2>
+    <p itemprop="description">
       SEO eller søkemotoroptimalisering handler mere om hvor relevant nettsiden din er. Hvor lett er det å komme til den via et google søk, og hvor på googles liste rangeres din nettside. Man sier at den beste plassen å gjemme en død kropp er side 2 på Google (Dette er kun en vits). Det finnes selvfølgelig mange flere søkemotorer der ute, men i denne sammenheng kommer jeg til å fokusere på den mest brukte og kjente, som er google. 
     </p>
 
-    <p itemprop="articleBody">
+    <p itemprop="description">
       Men i praksis hva er det dette egentlig betyr. Når du søker på noe via google så kommer det en rekke artikler og lenker til nettsider opp på førstesiden, og det er som regel de du går inn på også. Men hvordan og hvorfor er det akkurat de som kommer opp først? Det er det SEO handler om, hvordan komme på topplisten til google. Det er noen faktorer vi vet om som bestemmer hvem som blir rangert høyt oppe.
     </p>
-      <h3>På siden (Karlsen, 2022, SEO):</h3>
-      <ol itemprop="text">
-        <li>
+
+    <h3 itemscope itemtype="https://schema.org/ItemList">På siden (Karlsen, 2022, SEO):</h3>
+      <ol>
+        <li itemprop="itemListElement">
           Kvaliteten på innholdet
         </li>
-        <li>
+        <li itemprop="itemListElement">
           At nettsiden er mobilvennlig
         </li>
-        <li>
+        <li itemprop="itemListElement">
           Bruk av riktig html tagger
         </li>
-        <li>
+        <li itemprop="itemListElement">
           Alt tagger blir brukt riktig
         </li>
       </ol>
-      <h3>Andre faktorer (Karlsen, 2022, SEO):</h3>
+
+    <h3 itemscope itemtype="https://schema.org/ItemList">Andre faktorer (Karlsen, 2022, SEO):</h3>
       <ol>
-        <li>
+        <li itemprop="itemListElement">
           Hvor mye tillit har forbrukere til å bruke nettsiden din
         </li>
-        <li>
+        <li itemprop="itemListElement">
           Andre nettsteder som linker opp til din nettside
         </li>
-        <li>
+        <li itemprop="itemListElement">
           Rykter, at nettsiden blir omtalt på en positiv måte
         </li>
       </ol>
-    <p itemprop="articleBody">
+    <p itemprop="description">
       (Dette er selvfølgelig bare en liten prosentandel av hvor mange faktorer som bestemmer SEO).  SEO er en algoritme. Man kan tenke på det som en oppskrift, man følger oppskriften til punkt og prikke. Men en gang i blant blir oppskriften oppdatert, men det har ikke du fått med deg, som da kan føre til at det ikke blir like godt. Det samme skjer med SEO, den blir oppdatert, hvis du ikke da retter på feil eller endrer på nettsiden din kan den plutselig havne på side 10 i google. Men hvordan blir dette sjekket, vertfall google og yahoo bruker noe som heter “crawlere”, det er programmer som “krabber” gjennom nettsider og går igjennom ulike nettsider og lagrer informasjon om dem (Karlsen, 2022, SEO).
     </p>
 
-    <p itemprop="text">
+    <p itemprop="description">
       SEO eller søkemotoroptimalisering går ut på hvor optimal er nettsiden din i følge google eller andre søkemotorer. Hvor lett tilgjengelig er innholdet, er det blitt brukt riktig struktur av html osv. SEO er noe man konstant må jobbe med for å forbedre, med tanke på algoritme oppdateringer. Man kan tenke på det som en evig runddans, eller en hund som jager sin egen hale, det tar aldri slutt.
     </p>
   </article>
   <!--Sluten på SEO artikkel-->
 
-	<section class="uu-seo-tabell">
+	<section itemscope itemtype="https://schema.org/Table" class="uu-seo-tabell">
     <div class="tabell-styling tabell-topp"></div>
-    <div class="tabell-styling tabell-topp">Fordeler</div>
-    <div class="tabell-styling tabell-topp">Ulemper</div>
+    <div itemprop="about" class="tabell-styling tabell-topp">Fordeler</div>
+    <div itemprop="about" class="tabell-styling tabell-topp">Ulemper</div>
 
-    <div class="tabell-styling">
+    <div itemprop="about" class="tabell-styling">
       SEO - HTML struktur
     </div>
     <div class="tabell-styling">
@@ -219,7 +221,7 @@
       Ikke umulig for søkemotorer å tolke, men jo lettere det er jo bedre er det.
     </div>
 
-    <div class="tabell-styling zebra">
+    <div itemprop="about" class="tabell-styling zebra">
       SEO - microdata 
     </div>
 		<div class="tabell-styling zebra">
@@ -229,7 +231,7 @@
       Søkemotoren vet ikke hvor det bildet kommer fra eller hva det er, du mister en del nøkkelord. 
 		</div>
 
-		<div class="tabell-styling">
+		<div itemprop="about" class="tabell-styling">
       SEO - rykte
 		</div>
 		<div class="tabell-styling">
@@ -239,7 +241,7 @@
       Nettsiden din vil ikke få de samme besøkende igjen og igjen, noe som fører til nedgang av trafikk.
 		</div>
 
-		<div class="tabell-styling zebra">
+		<div itemprop="about" class="tabell-styling zebra">
       SEO - nøkkelord
 		</div>
 		<div class="tabell-styling zebra">
@@ -249,7 +251,7 @@
       Nettsiden kan miste veldig mange potensielle kunder og besøkende.
 		</div>
 
-		<div class="tabell-styling">
+		<div itemprop="about" class="tabell-styling">
       SEO - title tag
 		</div>
 		<div class="tabell-styling">
@@ -259,7 +261,7 @@
       Det blir forvirrende for bruker, deg og søkemotorer å vite innholdet på siden. 
 		</div>
 
-		<div class="tabell-styling zebra">
+		<div itemprop="about" class="tabell-styling zebra">
       SEO - landingpage
 		</div>
 		<div class="tabell-styling zebra">
@@ -271,10 +273,10 @@
   </section>
 
   <!--Litteraturliste-->
-  <section class="lit-liste">
-    <h3>Litteraturliste</h3>
+  <section itemscope itemtype="https://schema.org/ItemList" class="lit-liste">
+    <h3 itemprop="name">Litteraturliste</h3>
     <ol>
-      <li>
+      <li itemprop="itemListElement">
         Karlsen, A-C. B. A. (2022). SEO. Institutt for informasjonsteknologi og kommunikasjon,Høgskolen i Østfold.
       </li>
     </ol>

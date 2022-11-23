@@ -428,7 +428,49 @@ footer{
   background-color: rgb(201, 201, 201);
 }
 
+.contact-container{
+  max-width: 1080px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background: #cdb4db;
+  border-radius: 0.5rem;
+}
 
+.form-container{
+  padding: 2rem;
+}
+
+.form-container h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-form{
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact-form input, button, textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #2c2f48;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+
+.contact-form textarea{
+  resize: none;
+  height: 200px;
+}
 
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
 @media only screen and (max-width: 850px){

@@ -256,6 +256,11 @@ footer{
   color: #fff;
 }
 
+footer a{
+  color: #000000;
+  font-size: 1.4rem;
+}
+
 /*Bilde animasjoner*/
 .placeholder{
   transition: transform .3s ease;

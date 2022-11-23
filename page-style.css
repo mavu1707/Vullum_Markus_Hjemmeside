@@ -456,7 +456,7 @@ footer{
   row-gap: 1rem;
 }
 
-.contact-form input, button, textarea{
+.contact-form input, textarea{
   width: 100%;
   border: none;
   outline: none;
@@ -470,6 +470,11 @@ footer{
 .contact-form textarea{
   resize: none;
   height: 200px;
+}
+
+.map iframe{
+  width: 100%;
+  height: 50vh;
 }
 
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/

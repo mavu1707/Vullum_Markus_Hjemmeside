@@ -259,8 +259,9 @@ footer{
 }
 
 footer a{
-  color: #000000;
+  color: #fff;
   font-size: 1.4rem;
+  margin: 0.2rem;
 }
 
 /*Bilde animasjoner*/
@@ -432,6 +433,12 @@ footer a{
 .zebra{
   background-color: rgb(201, 201, 201);
 }
+
+.kontaktoss-introtekst{
+  display: flex;
+}
+
+
 
 .contact-container{
   max-width: 1080px;

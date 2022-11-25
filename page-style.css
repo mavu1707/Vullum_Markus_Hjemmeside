@@ -713,6 +713,11 @@ footer a{
     font-size: 1.5rem;
   }
 
+  .footer-text p{
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
   p{
     margin-left: 1.2rem;
     margin-right: 1.2rem;
@@ -731,4 +736,25 @@ footer a{
   li{
     text-align: center;
   }
+
+  .kontaktoss-side{
+    height: 36vh;
+    margin-bottom: 4rem;
+  }
+
+  .info{
+    margin-bottom: 1.2rem;
+  }
+
+  .contact-container{
+    margin: 0 auto;
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media only screen and (max-width: 1600px){
+
 }

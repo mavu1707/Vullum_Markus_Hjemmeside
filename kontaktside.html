@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dette er kontaktsiden, der du kan kontakte oss vie skjema eller telefon.">
+  <meta name="robots" content="nofollow">
+  <meta name="keywords" content="kontakt skjema, kontakts oss, kart, telefon, epost, e-post">
+  <meta name="author" content="Markus Vullum">
   <!--Normalize-->
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <!--Font Awsome-->
@@ -43,10 +47,10 @@
     </header>
   </div>
 
-  <section class="kontaktoss-side">
+  <section itemscope itemtype="https://schema.org/ContactPage" class="kontaktoss-side">
   <div class="kontaktoss-info">
   <div class="kontaktoss-tabell">
-      <h2>Kontakt oss</h2>
+      <h2 itemprop="about">Kontakt oss</h2>
       <div>
         <i class="fa-solid fa-phone">123 45 678</i>
       </div>
@@ -62,9 +66,9 @@
 
 <!--https://www.youtube.com/watch?v=nwEB3Wxh5N0-->
 <!--Kontaktskjema med kart blir laget-->
-<section>
+<section itemscope itemtype="https://schema.org/ContactPage">
   <div class="contact-container">
-    <div class="form-container">
+    <div itemprop="mainContentOfPage" class="form-container">
       <h2>Kontakt oss</h2>
       <form class="contact-form">
         <input type="text" placeholder="Fult navn" required>
@@ -73,14 +77,15 @@
         <button class="kontakt-oss" type="submit">Send</button>
       </form>
     </div>
-    <div class="map">
+    <div itemscope itemtype="https://schema.org/maps" class="map">
       <!--https://www.google.com/maps/place/Google+Norge/@59.9098506,10.7267124,15z/data=!4m5!3m4!1s0x0:0x380c13c8484db8db!8m2!3d59.9098506!4d10.7267124-->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.3432469017462!2d10.724523716095788!3d59.90985058186572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416c2ad5707991%3A0x380c13c8484db8db!2sGoogle%20Norge!5e0!3m2!1sno!2sno!4v1669206358397!5m2!1sno!2sno" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe itemprop="Place" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.3432469017462!2d10.724523716095788!3d59.90985058186572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416c2ad5707991%3A0x380c13c8484db8db!2sGoogle%20Norge!5e0!3m2!1sno!2sno!4v1669206358397!5m2!1sno!2sno" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>
 
 <!--Delingskanppen-->
+<!--https://www.youtube.com/watch?v=tDtipstdYBA-->
 <div class="share">
 <div class="share-button">
   <span class="share-button">

@@ -591,6 +591,15 @@ footer a{
   transition-delay: 0.4s;
 }
 
+#moon-icon{
+  width: 3rem;
+  cursor: pointer;
+}
+
+:root{
+  --primary-color: #fff;
+}
+
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
 @media only screen and (max-width: 850px){
   /*Grid områdene for mobil versjon*/
@@ -797,10 +806,10 @@ footer a{
     margin-right: auto;
   }
 
-  .main-artikel{
-
+  .artikel-tekst{
+    margin-left: 12%;
   }
-  
+
   footer{
     grid-area: footer;
   }

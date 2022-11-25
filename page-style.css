@@ -215,6 +215,17 @@ main{
   align-items: center;
 }
 
+.artikel-tekst h3{
+  margin-bottom: 1rem;
+}
+
+/*Selve teksten i hoved artikkel blir stlyet*/
+.artikel-tekst{
+  width: 50%;
+  color: whitesmoke;
+}
+
+/*kontakt oss dien blir stylet*/
 .kontaktoss-side{
   width: 100%;
   height: 20vh;
@@ -223,12 +234,6 @@ main{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-/*Selve teksten i hoved artikkel blir stlyet*/
-.artikel-tekst{
-  width: 50%;
-  color: whitesmoke;
 }
 
 .kontaktoss-tabell{
@@ -245,11 +250,6 @@ main{
   display: flex;
   text-align: center;
   margin-bottom: 4rem;
-}
-
-
-.artikel-tekst h3{
-  margin-bottom: 1rem;
 }
 
 /*bildene i artikkelkortene blir stylet*/
@@ -448,6 +448,7 @@ footer a{
 .tabell-topp{
   background-color: rgb(165, 165, 165);
 }
+
 .tabell-styling{
   display: flex;
   text-align: center;
@@ -457,6 +458,7 @@ footer a{
   line-height: 1.6rem;
   border: 2px solid #000000;
 }
+
 .zebra{
   background-color: rgb(201, 201, 201);
 }
@@ -512,10 +514,20 @@ footer a{
   height: 50vh;
 }
 
+/*Share knappen blir stylet*/
+.share{
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+}
+
 /*Delingsknappen for sosiale medier blir laget med ikoner*/
 .share-button{
-  width: 280px;
-  height: 80px;
+  width: 10rem;
+  height: 3rem;
   background: #2c2f48;
   border-radius: 40px;
   display: flex;
@@ -525,6 +537,7 @@ footer a{
   position: relative;
   cursor: pointer;
   transition: 0.3s linear;
+  letter-spacing: 0.1rem;
 }
 
 /*Hover effekt for share knapp*/

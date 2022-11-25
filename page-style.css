@@ -221,6 +221,27 @@ main{
   color: whitesmoke;
 }
 
+.kontaktoss-tekst{
+  color: #fff;
+  display: block;
+}
+
+.test-tabell{
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-rows: repeat(3, 1fr);
+  height: 16vh;
+  letter-spacing: 0.2rem;
+}
+
+.test-midt{
+  display: flex;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+
 .artikel-tekst h3{
   margin-bottom: 1rem;
 }
@@ -433,12 +454,6 @@ footer a{
 .zebra{
   background-color: rgb(201, 201, 201);
 }
-
-.kontaktoss-introtekst{
-  display: flex;
-}
-
-
 
 .contact-container{
   max-width: 1080px;
@@ -684,11 +699,13 @@ footer a{
     margin-left: 1.2rem;
     margin-right: 1.2rem;
   }
+
   .artikkel-tekst{
     margin-left: 1rem;
     margin-right: 1rem;
     line-height: 2.2rem;
   }
+
   section ol{
     padding: 0;
     margin: 1rem auto;

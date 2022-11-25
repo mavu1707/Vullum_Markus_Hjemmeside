@@ -755,6 +755,54 @@ footer a{
 }
 
 
-@media only screen and (max-width: 1400px){
+@media only screen and (min-width: 1700px){
+
+  html{
+    overflow-x: hidden;
+  }
+
+  #grid-area{
+    display: grid;
+    grid-area: 
+    "nav nav nav"
+    "header header header"
+    "intro intro intro"
+    "main main main main"
+    "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  nav{
+    grid-area: nav;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: center;
+  }
+
+  header{
+    grid-area: header;
+  }
+
+  main{
+    grid-area: main;
+  }
+
+  .main-flex{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-artikel{
+
+  }
   
+  footer{
+    grid-area: footer;
+  }
+
 }

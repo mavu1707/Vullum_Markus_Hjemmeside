@@ -427,8 +427,8 @@ footer a{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(7, 1fr);
   margin-top: 5rem;
-  margin-bottom: 10rem;
-  height: 90vh;
+  margin-bottom: 5rem;
+  height: 100%;
 }
 
 /*CMS tabell*/
@@ -440,8 +440,8 @@ footer a{
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   margin-top: 5rem;
-  margin-bottom: 10rem;
-  height: 90vh;
+  margin-bottom: 5rem;
+  height: 100%;
 }
 
 /*Tabell styling generelt*/
@@ -756,7 +756,5 @@ footer a{
 
 
 @media only screen and (max-width: 1600px){
-  .lit-liste{
-    margin-top: 50rem;
-  }
+  
 }

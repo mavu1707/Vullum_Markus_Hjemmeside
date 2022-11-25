@@ -756,5 +756,7 @@ footer a{
 
 
 @media only screen and (max-width: 1600px){
-
+  .lit-liste{
+    margin-top: 50rem;
+  }
 }

@@ -466,6 +466,7 @@ footer a{
 .kontakt{
   max-width: 1080px;
   margin: auto;
+  margin-top: 4rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

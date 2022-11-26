@@ -629,6 +629,7 @@ footer a{
     display: block;
     margin: 1rem;
     cursor: pointer; /*Lettere å se på desktop*/
+    position: relative;
   }
 
   .hamburger.active .bar:nth-child(2){
@@ -668,11 +669,12 @@ footer a{
 
   .navbar{
     padding: 0;
+    position: fixed;
+    background-color: #cdb4db;
   }
 
   /*Logo styling til mobil*/
   #logo{
-    position: absolute;
     top: 1rem;
     left: 1rem;
   }

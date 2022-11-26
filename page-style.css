@@ -646,13 +646,14 @@ footer a{
 
   .navbar-links{
     position: fixed;
-    left: -1000px;
-    top: 70px;
+    left: -900px;
+    top: 60px;
     flex-direction: column;
     background-color: #cdb4db;
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    margin-top: 0;
   }
 
   .nav-item{
@@ -665,12 +666,14 @@ footer a{
 
   .navbar-links.active{
     left: 0;
+    margin-top: 0;
   }
 
   .navbar{
     padding: 0;
     position: fixed;
     background-color: #cdb4db;
+    opacity: 0.94;
   }
 
   /*Logo styling til mobil*/

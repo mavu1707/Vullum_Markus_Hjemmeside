@@ -463,7 +463,7 @@ footer a{
   background-color: rgb(201, 201, 201);
 }
 
-.contact-container{
+.kontakt{
   max-width: 1080px;
   margin: auto;
   width: 100%;
@@ -476,22 +476,22 @@ footer a{
   border-radius: 0.5rem;
 }
 
-.form-container{
-  padding: 2rem;
+.kontak-boks{
+  margin: 2rem;
 }
 
-.form-container h2{
+.kontak-boks h2{
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.contact-form{
+.kontakt-skjema{
   display: grid;
   row-gap: 1rem;
 }
 
 /*Kontaktskjema*/
-.contact-form input, textarea{
+.kontakt-skjema input, textarea{
   width: 100%;
   border: none;
   outline: none;
@@ -502,8 +502,12 @@ footer a{
   border-radius: 0.4rem;
 }
 
+.kontakt-skjema button{
+  align-items: center;
+}
+
 /*Text bokesen kan ikke endre størrelse*/
-.contact-form textarea{
+.kontakt-skjema textarea{
   resize: none;
   height: 200px;
 }
@@ -677,17 +681,27 @@ footer a{
     flex-direction: column;
   }
 
+  .col{
+    margin-bottom: 4rem;
+  }
+
   .row .col{
     margin: none;
     padding: 0;
   }
 
   .col img{
-    max-width: 90%;
+    max-width: 100%;
+    display: flex;
+    align-content: center;
   }
 
   .main-artikel{
     width: 100%;
+  }
+
+  .artikel-tekst p{
+    margin-bottom: 2rem;
   }
 
   .cms-tabell{
@@ -755,10 +769,13 @@ footer a{
     margin-bottom: 1.2rem;
   }
 
-  .contact-container{
-    margin: 0 auto;
+  .kontakt{
     width: 90%;
     grid-template-columns: 1fr;
+  }
+
+  .kontakt-skjema{
+    margin-right: 2rem;
   }
 
 }

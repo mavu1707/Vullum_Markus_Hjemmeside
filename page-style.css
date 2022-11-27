@@ -500,6 +500,10 @@ footer h3{
   border-radius: 0.5rem;
 }
 
+.kontakt h2{
+  color: var(--icon-color);
+}
+
 .kontak-boks{
   margin: 2rem;
 }
@@ -626,14 +630,14 @@ footer h3{
 
 /*Her blir fargene lagret*/
 :root{
-  --main-bg-color: #fff;
-  --primary-color: #fff;
-  --secondary-color: #cdb4db;
-  --kontakt-color: #cdb4db;
-  --third-color: #69c6e2;
-  --icon-color: #fff;
+  --main-bg-color: #F7F9F7;
+  --primary-color: #F7F9F7;
+  --secondary-color: #750D37;
+  --kontakt-color: #750D37;
+  --third-color: #210124;
+  --icon-color: #F7F9F7;
   --text-color: #000000;
-  --footer-color: #5c5c5c;
+  --footer-color: #210124;
 
   --bakgrunn-top: url(img/header.jpg);
   --bakgrunn-main: url(img/main-article.jpg);

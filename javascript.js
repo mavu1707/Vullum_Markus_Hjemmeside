@@ -32,7 +32,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 /*Mørkt tema*/
 /*Hentet fra: https://www.youtube.com/watch?v=9LZGB3OLXNQ*/
-var icon = document.getElementById("moon-icon")
+let icon = document.getElementById("moon-icon")
 
 icon.onclick = function(){
   document.body.classList.toggle("dark-theme")

@@ -408,12 +408,16 @@ footer a{
   line-height: 2.2rem;
 }
 
+.liste{
+  color: var(--text-color);
+}
 /*Litteraturlisten blir stylet*/
 .lit-liste{
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
   line-height: 3rem;
+  color: var(--text-color);
 }
 
 .lit-liste li{
@@ -437,6 +441,7 @@ footer a{
   margin-top: 5rem;
   margin-bottom: 5rem;
   height: 100%;
+  color: var(--text-color);
 }
 
 /*CMS tabell*/
@@ -450,11 +455,12 @@ footer a{
   margin-top: 5rem;
   margin-bottom: 5rem;
   height: 100%;
+  color: var(--text-color);
 }
 
 /*Tabell styling generelt*/
 .tabell-topp{
-  background-color: rgb(165, 165, 165);
+  background-color: #a5a5a5;
 }
 
 .tabell-styling{
@@ -468,7 +474,7 @@ footer a{
 }
 
 .zebra{
-  background-color: rgb(201, 201, 201);
+  background-color: #a5a5a5;
 }
 
 .kontakt{
@@ -481,7 +487,7 @@ footer a{
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
-  background: var(--secondary-color);
+  background: var(--kontakt-color);
   border-radius: 0.5rem;
 }
 
@@ -504,7 +510,7 @@ footer a{
   width: 100%;
   border: none;
   outline: none;
-  background: var(--primary-color);
+  background: var(--icon-color);
   padding: 1rem;
   font-size: 1rem;
   color: var(--text-color);
@@ -614,6 +620,7 @@ footer a{
   --main-bg-color: #fff;
   --primary-color: #fff;
   --secondary-color: #cdb4db;
+  --kontakt-color: #cdb4db;
   --third-color: #69c6e2;
   --icon-color: #fff;
   --text-color: #000000;
@@ -621,9 +628,10 @@ footer a{
 }
 
 .dark-theme{
-  --main-bg-color: #000000;
+  --main-bg-color: #363636;
   --primary-color: #000000;
   --secondary-color: #fff;
+  --kontakt-color: #000000;
   --third-color: #000000;
   --icon-color:#fff;
   --text-color: #fff;

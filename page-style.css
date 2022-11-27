@@ -13,6 +13,7 @@ body, html{
 body{
   font-family: 'Josefin Sans', sans-serif;
   line-height: auto;
+  background-color: var(--main-bg-color);
 }
 
 /*Genrell styling på elementer*/
@@ -22,11 +23,13 @@ h1{
 
 h2{
   font-size: 2.2rem;
+  color: var(--text-color);
 }
 
 h3{
   font-size: 1.8rem;
   text-align: center;
+  color: var(--text-color);
 }
 
 article{
@@ -35,6 +38,7 @@ article{
 
 p{
   font-size: 1.4rem;
+  color: var(--text-color);
 }
 
 nav{
@@ -119,24 +123,28 @@ ul.navbar-links{
 
 /*Selve menypunktenes styling*/
 nav a{
-  color: whitesmoke;
+  color: var(--primary-color);
   text-decoration: none;
   display: flex;
+}
+
+.fa-moon:before{
+  margin-right: 1.8rem;
 }
 
 /*Styler selve teksten i header*/
 .header-content{
   margin-bottom: 10rem;
-  color: whitesmoke;
+  color: var(--primary-color);
   text-align: center;
 }
 
 /*Kontakt oss knappen blir stylet*/
 .kontakt-oss{
   padding: 8px 15px;
-  background-color: #cdb4db;
+  background-color: var(--secondary-color);
   border-radius: 30px;
-  color: whitesmoke;
+  color: var(--primary-color);
   text-decoration: none;
   cursor: pointer;
 }
@@ -151,7 +159,7 @@ nav a{
 /*Teksten til artikkel-seksjonen blir stylet*/
 .intro-title{
   text-align: center;
-  color: #69c6e2;
+  color: var(--third-color);
 }
 
 /*Styling av linjen under "Artikkler"
@@ -159,7 +167,7 @@ Source: https://www.w3schools.com/tags/tag_hr.asp*/
 .line{
   width: 8rem;
   height: 0.4rem;
-  background: #cdb4db;
+  background: var(--secondary-color);
   margin: 2px auto;
   border-radius: 10rem;
 }
@@ -215,14 +223,14 @@ main{
   align-items: center;
 }
 
-.artikel-tekst h3{
-  margin-bottom: 1rem;
-}
-
 /*Selve teksten i hoved artikkel blir stlyet*/
 .artikel-tekst{
   width: 50%;
-  color: whitesmoke;
+}
+
+.artikel-tekst h2{
+  margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 /*kontakt oss dien blir stylet*/
@@ -243,7 +251,7 @@ main{
   grid-template-rows: repeat(3, 1fr);
   height: 16vh;
   letter-spacing: 0.2rem;
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .kontaktoss-info{
@@ -268,7 +276,7 @@ main{
 
 /*Artikklene blir stylet*/
 main article{
-  background-color: #fff;
+  background-color: var(--primary-color);
   padding: 2rem;
   flex: 1;
 }
@@ -281,12 +289,11 @@ footer{
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 6rem;
-  background-color: rgb(80, 80, 80);
-  color: #fff;
+  background-color: var(--footer-color);
 }
 
 footer a{
-  color: #fff;
+  color: var(--icon-color);
   font-size: 1.4rem;
   margin: 0.2rem;
 }
@@ -317,7 +324,7 @@ footer a{
 
 /*Meny animasjoner*/
 .nav-item:hover{
-  color: #cdb4db;
+  color: var(--secondary-color);
 }
 
 /*Animasjon for "smooth-in & smooth-out"*/
@@ -364,19 +371,20 @@ footer a{
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: whitesmoke;
+  background-color: var(--primary-color);
 }
 
 /*Intro teksten som står øverst*/
 .introtekst{
   line-height: 2rem;
   max-width: 70%;
+  color: var(--primary-color);
 }
 
 /*Selve artikkelen sin styling*/
 .container {
   width: 400px;
-  background: #000000;
+  background: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -414,7 +422,7 @@ footer a{
 
 /*Styling på "skrevet av Markus Vullum"*/
 .skrevet-av{
-  color: #fff;
+  color: var(--primary-color);
   font-size: 1.2rem;
   opacity: 0.7;
 }
@@ -456,7 +464,7 @@ footer a{
   padding: 1rem 1rem;
   font-size: 1.4rem;
   line-height: 1.6rem;
-  border: 2px solid #000000;
+  border: 2px solid var(--text-color);
 }
 
 .zebra{
@@ -473,7 +481,7 @@ footer a{
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
-  background: #cdb4db;
+  background: var(--secondary-color);
   border-radius: 0.5rem;
 }
 
@@ -496,10 +504,10 @@ footer a{
   width: 100%;
   border: none;
   outline: none;
-  background: #fff;
+  background: var(--primary-color);
   padding: 1rem;
   font-size: 1rem;
-  color: rgb(0, 0, 0);
+  color: var(--text-color);
   border-radius: 0.4rem;
 }
 
@@ -533,7 +541,7 @@ footer a{
 .share-button{
   width: 10rem;
   height: 3rem;
-  background: #2c2f48;
+  background: var(--third-color);
   border-radius: 40px;
   display: flex;
   align-items: center;
@@ -555,8 +563,8 @@ footer a{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #cdb4db;
-  color: #fff;
+  background: var(--secondary-color);
+  color: var(--primary-color);
   text-align: center;
   line-height: 80px;
   z-index: 999;
@@ -572,7 +580,7 @@ footer a{
 .share-button a{
   flex: 1;
   font-size: 1.4rem;
-  color: #fff;
+  color: var(--icon-color);
   text-align: center;
   transform: translateX(-100%);
   transition: 0.3s linear;
@@ -597,12 +605,29 @@ footer a{
 }
 
 #moon-icon{
-  width: 3rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
+/*Her blir fargene lagret*/
 :root{
+  --main-bg-color: #fff;
   --primary-color: #fff;
+  --secondary-color: #cdb4db;
+  --third-color: #69c6e2;
+  --icon-color: #fff;
+  --text-color: #000000;
+  --footer-color: #5c5c5c;
+}
+
+.dark-theme{
+  --main-bg-color: #000000;
+  --primary-color: #000000;
+  --secondary-color: #fff;
+  --third-color: #000000;
+  --icon-color:#fff;
+  --text-color: #fff;
+  --footer-color: #000000;
 }
 
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/
@@ -650,7 +675,7 @@ footer a{
     left: -900px;
     top: 60px;
     flex-direction: column;
-    background-color: #cdb4db;
+    background-color: var(--secondary-color);
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -673,7 +698,7 @@ footer a{
   .navbar{
     padding: 0;
     position: fixed;
-    background-color: #cdb4db;
+    background-color: var(--secondary-color);
     opacity: 0.94;
   }
 
@@ -681,6 +706,11 @@ footer a{
   #logo{
     top: 1rem;
     left: 1rem;
+    margin: ;
+  }
+
+  .fa-moon::before{
+    margin: 0;
   }
 
   .row{

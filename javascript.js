@@ -29,3 +29,11 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   hamburger.classList.remove("active")
   navbarLinks.classList.remove("active")
 }))
+
+/*Mørkt tema*/
+
+var icon = document.getElementById("moon-icon")
+
+icon.onclick = function(){
+  document.body.classList.toggle("dark-theme")
+}

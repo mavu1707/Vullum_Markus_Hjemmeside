@@ -48,27 +48,31 @@
 </head>
 <body>
   <div id="grid-area">
+
     <!--Meny bar blir laget med logo og menypunkter-->
     <nav class="navbar">
       <a href="index.html"><img id="logo" src="img/logo-pic.png" alt="Logo ikon"></a><!--Laget selv-->
+      
       <!--Her er alle menypunktene i navbar-->
       <ul class="navbar-links">
-      <li class="nav-item"><a href="index.html" class="nav-link">Hjem</a></li>
-      <li class="nav-item"><a href="uu-vs-seo.html" class="nav-link">UU vs SEO</a></li>
-      <li class="nav-item"><a href="cms.html" class="nav-link">CMS</a></li>
-      <li class="nav-item"><a href="analyse.html" class="nav-link">Analyse</a></li>
-      <li class="kontakt-oss nav-item"><a href="kontaktside.html" class="nav-link">Kontakt oss</a></li>
-    </ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Hjem</a></li>
+        <li class="nav-item"><a href="uu-vs-seo.html" class="nav-link">UU vs SEO</a></li>
+        <li class="nav-item"><a href="cms.html" class="nav-link">CMS</a></li>
+        <li class="nav-item"><a href="analyse.html" class="nav-link">Analyse</a></li>
+        <li class="kontakt-oss nav-item"><a href="kontaktside.html" class="nav-link">Kontakt oss</a></li>
+      </ul>
 
-    <!--Dark Mode-->
-    <i id="moon-icon" class="fa-solid fa-moon"></i>
-    
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-  </nav>
+      <!--Dark Mode-->
+      <!--https://www.youtube.com/watch?v=9LZGB3OLXNQ-->
+      <i id="moon-icon" class="fa-solid fa-moon"></i>
+      
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
     <!--Starten på header. Inneholder: overskrift, ingress, knapp og bakgrunnsbilde-->
     <header>
       <div class="header-content">
@@ -78,9 +82,10 @@
     </header>
   </div>
 
+  <!--Start på kontaktssiden-->
   <section itemscope itemtype="https://schema.org/ContactPage" class="kontaktoss-side">
   <div class="kontaktoss-info">
-  <div class="kontaktoss-tabell">
+    <div class="kontaktoss-tabell">
       <h2 itemprop="about">Kontakt oss</h2>
       <div class="info">
         <i class="fa-solid fa-phone">123 45 678</i>
@@ -93,41 +98,41 @@
       </div>
     </div>
   </div>
-</section>
+  </section>
 
-<!--https://www.youtube.com/watch?v=nwEB3Wxh5N0-->
-<!--Kontaktskjema med kart blir laget-->
-<section itemscope itemtype="https://schema.org/ContactPage">
-  <div class="kontakt">
-    <div itemprop="mainContentOfPage" class="kontak-boks">
-      <h2>Kontakt oss</h2>
-      <form class="kontakt-skjema">
-        <input type="text" placeholder="Fult navn" required>
-        <input type="email" placeholder="E-mail" required>
-        <textarea name="description" cols="50" rows="10" placeholder="Skriv din melding her" required></textarea>
-        <button class="kontakt-oss" type="submit">Send</button>
-      </form>
+  <!--https://www.youtube.com/watch?v=nwEB3Wxh5N0-->
+  <!--Kontaktskjema med kart blir laget-->
+  <section itemscope itemtype="https://schema.org/ContactPage">
+    <div class="kontakt">
+      <div itemprop="mainContentOfPage" class="kontak-boks">
+        <h2>Kontakt oss</h2>
+        <form class="kontakt-skjema">
+          <input type="text" placeholder="Fult navn" required>
+          <input type="email" placeholder="E-mail" required>
+          <textarea name="description" cols="50" rows="10" placeholder="Skriv din melding her" required></textarea>
+          <button class="kontakt-oss" type="submit">Send</button>
+        </form>
+      </div>
+      <div itemscope itemtype="https://schema.org/maps" class="map">
+        <!--https://www.google.com/maps/place/Google+Norge/@59.9098506,10.7267124,15z/data=!4m5!3m4!1s0x0:0x380c13c8484db8db!8m2!3d59.9098506!4d10.7267124-->
+        <iframe itemprop="Place" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.3432469017462!2d10.724523716095788!3d59.90985058186572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416c2ad5707991%3A0x380c13c8484db8db!2sGoogle%20Norge!5e0!3m2!1sno!2sno!4v1669206358397!5m2!1sno!2sno" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
-    <div itemscope itemtype="https://schema.org/maps" class="map">
-      <!--https://www.google.com/maps/place/Google+Norge/@59.9098506,10.7267124,15z/data=!4m5!3m4!1s0x0:0x380c13c8484db8db!8m2!3d59.9098506!4d10.7267124-->
-      <iframe itemprop="Place" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.3432469017462!2d10.724523716095788!3d59.90985058186572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416c2ad5707991%3A0x380c13c8484db8db!2sGoogle%20Norge!5e0!3m2!1sno!2sno!4v1669206358397!5m2!1sno!2sno" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!--Delingskanppen-->
+  <!--https://www.youtube.com/watch?v=tDtipstdYBA-->
+  <div class="share">
+    <div class="share-button">
+      <span class="share-button">
+        <i class="fa-solid fa-share"> Del</i>
+      </span>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
     </div>
   </div>
-</section>
-
-<!--Delingskanppen-->
-<!--https://www.youtube.com/watch?v=tDtipstdYBA-->
-<div class="share">
-<div class="share-button">
-  <span class="share-button">
-    <i class="fa-solid fa-share"> Del</i>
-  </span>
-    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-</div>
-</div>
 
   <!--Footer med copyright informasjon-->
   <footer>

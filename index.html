@@ -48,37 +48,41 @@
   <title>Homepage</title>
 </head>
 <body>
-  <!--Lager grid area for alle elementer-->
   <div id="grid-area">
+
     <!--Meny bar blir laget med logo og menypunkter-->
     <nav class="navbar">
-        <a href="index.html"><img id="logo" src="img/logo-pic.png" alt="Logo ikon"></a><!--Laget selv-->
-        <!--Her er alle menypunktene i navbar-->
-        <ul class="navbar-links">
+      <a href="index.html"><img id="logo" src="img/logo-pic.png" alt="Logo ikon"></a><!--Laget selv-->
+      
+      <!--Her er alle menypunktene i navbar-->
+      <ul class="navbar-links">
         <li class="nav-item"><a href="index.html" class="nav-link">Hjem</a></li>
         <li class="nav-item"><a href="uu-vs-seo.html" class="nav-link">UU vs SEO</a></li>
         <li class="nav-item"><a href="cms.html" class="nav-link">CMS</a></li>
         <li class="nav-item"><a href="analyse.html" class="nav-link">Analyse</a></li>
         <li class="kontakt-oss nav-item"><a href="kontaktside.html" class="nav-link">Kontakt oss</a></li>
       </ul>
-      <!--Dark mode-->
+
+      <!--Dark Mode-->
       <!--https://www.youtube.com/watch?v=9LZGB3OLXNQ-->
       <i id="moon-icon" class="fa-solid fa-moon"></i>
-
+      
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
     </nav>
+
     <!--Starten på header. Inneholder: overskrift, ingress, knapp og bakgrunnsbilde-->
     <header>
       <div class="header-content">
-        <h1 class="anim">Velkommen til min hjemmeside</h1>
+        <h1 class="anim">Velkommen til nettsiden</h1>
         <a href="kontaktside.html" class="kontakt-oss anim">Kontakt Oss</a>
       </div>
     </header>
   </div>
+
   <!--Intro til artikklene-->
   <section id="intro-section">
     <div class="intro-title">
@@ -86,8 +90,10 @@
       <div class="line"></div>
     </div>
   </section>
-<!--Dette er main, der alle artikklene mine er satt inn-->
+
+  <!--Dette er main, der alle artikklene mine er satt inn-->
   <main itemscope itemtype="https://schema.org/Article">
+
     <!--De to første artikklene blir opprettet-->
     <section class="main-flex">
       <div class="row">
@@ -100,6 +106,7 @@
           </p>
           <a href="uu-vs-seo.html" class="kontakt-oss">Les mer</a>
         </div>
+
         <div class="col">
           <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/G5A5ZNjS2tE)-->
           <a href="cms.html"><img class="placeholder" src="img/placeholder.jpg" alt="Logo til hjemmesiden"></a>
@@ -111,57 +118,58 @@
         </div>
       </div>
     </section>
+
     <!--Artikkel nummer 2 blir opprettet-->
     <section class="main-artikel">
       <div class="artikel-tekst">
         <h2 itemprop="name">Analyse</h2>
-            <p itemprop="description" class="introtekst">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a href="analyse.html" class="kontakt-oss main-knapp">Les mer</a>
+        <p itemprop="description" class="introtekst">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <a href="analyse.html" class="kontakt-oss main-knapp">Les mer</a>
       </div>
     </section>
 
     <section class="main-flex">
       <article>
-            <a href="uu-vs-seo.html"><img class="placeholder-3" src="img/placeholder-3.jpg" alt="Logo til hjemmesiden"></a> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/9lNoGFaNI2c)-->
-            <h3 itemprop="name">UU vs SEO</h3>
-            <p itemprop="description">
-              Universell utforming handler om hvordan nettsiden din er satt opp på best mulig måte. Tenk på det som en boligblokk som har mange etasjer, men kun har trapper for å komme seg til øverste etasje. Da blir det veldig vanskelig for noen som er i rullestol eller krykker å bo der (med mindre de bor i 1 etasje). Det er det Universell utforming handler om.
-            </p>
-            <a href="#" class="kontakt-oss">Les mer</a>
+        <a href="uu-vs-seo.html"><img class="placeholder-3" src="img/placeholder-3.jpg" alt="Logo til hjemmesiden"></a> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/9lNoGFaNI2c)-->
+        <h3 itemprop="name">UU vs SEO</h3>
+        <p itemprop="description">
+          Universell utforming handler om hvordan nettsiden din er satt opp på best mulig måte. Tenk på det som en boligblokk som har mange etasjer, men kun har trapper for å komme seg til øverste etasje. Da blir det veldig vanskelig for noen som er i rullestol eller krykker å bo der (med mindre de bor i 1 etasje). Det er det Universell utforming handler om.
+        </p>
+        <a href="#" class="kontakt-oss">Les mer</a>
       </article>
       <article>
-            <a href="kontaktside.html"><img class="placeholder-3" src="img/placeholder-3.jpg" alt="Logo til hjemmesiden"></a> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/9lNoGFaNI2c)-->
-            <h3 itemprop="name">Kontakt side</h3>
-            <p itemprop="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <a href="#" class="kontakt-oss">Les mer</a>
+        <a href="kontaktside.html"><img class="placeholder-3" src="img/placeholder-3.jpg" alt="Logo til hjemmesiden"></a> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/9lNoGFaNI2c)-->
+        <h3 itemprop="name">Kontakt side</h3>
+        <p itemprop="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <a href="#" class="kontakt-oss">Les mer</a>
       </article>
       <article>
-            <a href="cms.html"><img class="placeholder-3" src="img/placeholder-3.jpg" alt="Logo til hjemmesiden"></a> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/9lNoGFaNI2c)-->
-            <h3 itemprop="name">CMS</h3>
-            <p itemprop="description">
-              I denne artikelen skal jeg forklare hva som er forksjellen på headless og tradisjonelt CMS, men før det, hva er egentlig CMS? Content Managment Systems (CMS). Dette er en software programvare som gjør det veldig enkelt for hvilken som helst person å lage sin egen nettside. Avhengig av hvilken programvare du bruker kan du tenke på det som drag and drop, du drar og legger til bilder eller tekst der du vi på nettsiden.
-            </p>
-            <a href="#" class="kontakt-oss">Les mer</a>
+        <a href="cms.html"><img class="placeholder-3" src="img/placeholder-3.jpg" alt="Logo til hjemmesiden"></a> <!--Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/9lNoGFaNI2c)-->
+        <h3 itemprop="name">CMS</h3>
+        <p itemprop="description">
+          I denne artikelen skal jeg forklare hva som er forksjellen på headless og tradisjonelt CMS, men før det, hva er egentlig CMS? Content Managment Systems (CMS). Dette er en software programvare som gjør det veldig enkelt for hvilken som helst person å lage sin egen nettside. Avhengig av hvilken programvare du bruker kan du tenke på det som drag and drop, du drar og legger til bilder eller tekst der du vi på nettsiden.
+        </p>
+        <a href="#" class="kontakt-oss">Les mer</a>
       </article>
     </section>
   </main>
 
   <!--Delingskanppen-->
   <!--https://www.youtube.com/watch?v=tDtipstdYBA-->
-<div class="share">
-  <div class="share-button">
-    <span class="share-button">
-      <i class="fa-solid fa-share"> Del</i>
-    </span>
+  <div class="share">
+    <div class="share-button">
+      <span class="share-button">
+        <i class="fa-solid fa-share"> Del</i>
+      </span>
       <a href="#"><i class="fa-brands fa-facebook"></i></a>
       <a href="#"><i class="fa-brands fa-instagram"></i></a>
       <a href="#"><i class="fa-brands fa-twitter"></i></a>
       <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-  </div>
+    </div>
   </div>
 
 <!--Footer med copyright informasjon-->
@@ -174,6 +182,5 @@
       <a href="#"><i class="fa-brands fa-pinterest"></i></a>
     </div>
   </footer>
-  <!--Mitt JS dokument for hamburger meny-->
 </body>
 </html>

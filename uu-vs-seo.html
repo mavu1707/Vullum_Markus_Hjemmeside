@@ -51,27 +51,31 @@
 
 <body>
   <div id="grid-area">
+
     <!--Meny bar blir laget med logo og menypunkter-->
     <nav class="navbar">
       <a href="index.html"><img id="logo" src="img/logo-pic.png" alt="Logo ikon"></a><!--Laget selv-->
+      
       <!--Her er alle menypunktene i navbar-->
       <ul class="navbar-links">
-      <li class="nav-item"><a href="index.html" class="nav-link">Hjem</a></li>
-      <li class="nav-item"><a href="uu-vs-seo.html" class="nav-link">UU vs SEO</a></li>
-      <li class="nav-item"><a href="cms.html" class="nav-link">CMS</a></li>
-      <li class="nav-item"><a href="analyse.html" class="nav-link">Analyse</a></li>
-      <li class="kontakt-oss nav-item"><a href="kontaktside.html" class="nav-link">Kontakt oss</a></li>
-    </ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Hjem</a></li>
+        <li class="nav-item"><a href="uu-vs-seo.html" class="nav-link">UU vs SEO</a></li>
+        <li class="nav-item"><a href="cms.html" class="nav-link">CMS</a></li>
+        <li class="nav-item"><a href="analyse.html" class="nav-link">Analyse</a></li>
+        <li class="kontakt-oss nav-item"><a href="kontaktside.html" class="nav-link">Kontakt oss</a></li>
+      </ul>
 
-    <!--Dark Mode-->
-    <i id="moon-icon" class="fa-solid fa-moon"></i>
-    
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-  </nav>
+      <!--Dark Mode-->
+      <!--https://www.youtube.com/watch?v=9LZGB3OLXNQ-->
+      <i id="moon-icon" class="fa-solid fa-moon"></i>
+      
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
     <!--Starten på header. Inneholder: overskrift, ingress, knapp og bakgrunnsbilde-->
     <header>
       <div class="header-content">
@@ -80,18 +84,20 @@
       </div>
     </header>
   </div>
-  <!--Noe nytt som kommer snart-->
+
+  <!--Starten på Artikkel om UU og SEO-->
   <section itemscope itemtype="https://schema.org/Article" class="main-artikel">
     <div class="artikel-tekst">
       <h2 itemprop="name">UU vs SEO</h2>
-          <p itemprop="description" class="introtekst">
-            UU og SEO er hvordan nettsiden din er satt opp på best mulig og tilgjengelige måte.
-          </p>
-          <p itemprop="author" class="skrevet-av">
-            Skrevet av Markus Vullum
-          </p>
+        <p itemprop="description" class="introtekst">
+          UU og SEO er hvordan nettsiden din er satt opp på best mulig og tilgjengelige måte.
+        </p>
+        <p itemprop="author" class="skrevet-av">
+          Skrevet av Markus Vullum
+        </p>
     </div>
   </section>
+
   <!--Artikkelen for UU begynner-->
   <article itemscope itemtype="https://schema.org/Article" class="artikkel-tekst">
     <h2 itemprop="name">UU</h2>
@@ -107,90 +113,91 @@
       I bunn og grunn handler universell utforming om hvor brukervennlig nettsiden din er, er den kompatibel på både desktop, nettbrett og mobil. Hvordan er den å bruke for de som er svaksynte, fargeblinde osv. Det at noe er fint å se på kan være viktig for deg som designer, men for en som er blind er ikke det like viktig. Derfor er det viktig at alle har muligheten, selv om de som trenger den ekstra hjelpen er i fåtall. 
     </p>
   </article>
-<!--Sluuten på UU artikkel-->
 
-<!--Starten på tabellen over UU og SEO fordeler/ulemper-->
-<section itemscope itemtype="https://schema.org/Table" class="uu-seo-tabell">
-  <div class="tabell-styling tabell-topp"></div>
-  <div itemprop="about" class="tabell-styling tabell-topp"><h3>Fordeler</h3></div>
-  <div itemprop="about" class="tabell-styling tabell-topp"><h3>Ulemper</h3></div>
+  <!--Tabell over UU og SEO fordeler/ulemper-->
+  <section itemscope itemtype="https://schema.org/Table" class="uu-seo-tabell">
+    <div class="tabell-styling tabell-topp"></div>
+    <div itemprop="about" class="tabell-styling tabell-topp"><h3>Fordeler</h3></div>
+    <div itemprop="about" class="tabell-styling tabell-topp"><h3>Ulemper</h3></div>
 
-  <div itemprop="about" class="tabell-styling">UU - HTML struktur</div>
-  <div class="tabell-styling">
-    At HTML strukturen er satt opp på riktig måte, slik at opplesningsverktøy får en lettere jobb (Akerbæk, 2022, UU)
-  </div>
-  <div class="tabell-styling">
-    Opplesningsverktøy sliter med å lese opp nettsiden din.
-  </div>
+    <div itemprop="about" class="tabell-styling">
+      UU - HTML struktur
+    </div>
+    <div class="tabell-styling">
+      At HTML strukturen er satt opp på riktig måte, slik at opplesningsverktøy får en lettere jobb (Akerbæk, 2022, UU)
+    </div>
+    <div class="tabell-styling">
+      Opplesningsverktøy sliter med å lese opp nettsiden din.
+    </div>
 
-  <div itemprop="about" class="tabell-styling zebra">
-    UU - alt taggen
-  </div>
-  <div class="tabell-styling zebra">
-    Dette er en viktig tag innenfor HTML som står for alternativ, dvs for blinde og svaksynte som ikke kan se bilder finnes det en alternativ tekst for dem som opplesningsverktøy kan lese opp (Akerbæk, 2022, UU).
-  </div>
-  <div class="tabell-styling zebra">
-    Svaksynte og blinde kan ikke se et bilde som er på nettsiden. Hvis et bilde er veldig viktig for konteksten blir dette vanskelig å forstå.
-  </div>
+    <div itemprop="about" class="tabell-styling zebra">
+      UU - alt taggen
+    </div>
+    <div class="tabell-styling zebra">
+      Dette er en viktig tag innenfor HTML som står for alternativ, dvs for blinde og svaksynte som ikke kan se bilder finnes det en alternativ tekst for dem som opplesningsverktøy kan lese opp (Akerbæk, 2022, UU).
+    </div>
+    <div class="tabell-styling zebra">
+      Svaksynte og blinde kan ikke se et bilde som er på nettsiden. Hvis et bilde er veldig viktig for konteksten blir dette vanskelig å forstå.
+    </div>
 
-  <div itemprop="about" class="tabell-styling">
-    UU - HTML lang taggen
-  </div>
-  <div class="tabell-styling">
-    Det er viktig at lang taggen er satt til riktig språk, slik at opplesningsverktøy leser opp nettsiden på riktig språk (Akerbæk, 2022, UU).
-  </div>
-  <div class="tabell-styling">
-    Opplesningsverktøyet kan begynne å lese opp nettsiden på en “norsk-engelsk” aksent.  
-  </div>
+    <div itemprop="about" class="tabell-styling">
+      UU - HTML lang taggen
+    </div>
+    <div class="tabell-styling">
+      Det er viktig at lang taggen er satt til riktig språk, slik at opplesningsverktøy leser opp nettsiden på riktig språk (Akerbæk, 2022, UU).
+    </div>
+    <div class="tabell-styling">
+      Opplesningsverktøyet kan begynne å lese opp nettsiden på en “norsk-engelsk” aksent.  
+    </div>
 
-  <div itemprop="about" class="tabell-styling zebra">
-    UU - Fargebruk i CSS
-  </div>
-  <div class="tabell-styling zebra">
-    Fargene som blir brukt er viktig mtp fargeblinde som kanskje sliter med å se ulike farger. Viktig med høyt kontrastnivå (Akerbæk, 2022, UU). 
-  </div>
-  <div class="tabell-styling zebra">
-    Innhold på siden kan bli helt uleselig for enkeltpersoner.
-  </div>
+    <div itemprop="about" class="tabell-styling zebra">
+      UU - Fargebruk i CSS
+    </div>
+    <div class="tabell-styling zebra">
+      Fargene som blir brukt er viktig mtp fargeblinde som kanskje sliter med å se ulike farger. Viktig med høyt kontrastnivå (Akerbæk, 2022, UU). 
+    </div>
+    <div class="tabell-styling zebra">
+      Innhold på siden kan bli helt uleselig for enkeltpersoner.
+    </div>
 
-  <div itemprop="about" class="tabell-styling">
-    UU - Mobile first
-  </div>
-  <div class="tabell-styling">
-    Nettsiden må kunne fungere på mobil og nettbrett (Akerbæk, 2022, UU). 
-  </div>
-  <div class="tabell-styling">
-    Personer som vil ta i bruk nettsiden får ikke dette til pga den er kun tilpasset desktop besøkende. 
-  </div>
+    <div itemprop="about" class="tabell-styling">
+      UU - Mobile first
+    </div>
+    <div class="tabell-styling">
+      Nettsiden må kunne fungere på mobil og nettbrett (Akerbæk, 2022, UU). 
+    </div>
+    <div class="tabell-styling">
+      Personer som vil ta i bruk nettsiden får ikke dette til pga den er kun tilpasset desktop besøkende. 
+    </div>
 
-  <div itemprop="about" class="tabell-styling zebra">
-    UU - Attributten roles
-  </div>
-  <div class="tabell-styling zebra">
-    Dette er viktig for brukere som bruker opplesningsverktøy slik at de som bruker det kan ha en interaksjon med de ulike semantiske taggene (Akerbæk, 2022, UU).
-  </div>
-  <div class="tabell-styling zebra">
-    Kan medføre for vanskeligheter for opplesningsverktøy. 
-  </div>
-</section>
+    <div itemprop="about" class="tabell-styling zebra">
+      UU - Attributten roles
+    </div>
+    <div class="tabell-styling zebra">
+      Dette er viktig for brukere som bruker opplesningsverktøy slik at de som bruker det kan ha en interaksjon med de ulike semantiske taggene (Akerbæk, 2022, UU).
+    </div>
+    <div class="tabell-styling zebra">
+      Kan medføre for vanskeligheter for opplesningsverktøy. 
+    </div>
+  </section>
 
-<!--Litteraturliste-->
-<section itemscope itemtype="https://schema.org/ItemList" class="lit-liste">
-  <h3 itemprop="name">Litteraturliste</h3>
-  <ol>
-    <li itemprop="itemListElement">
-      Uutilsynet (b). (2022). Hvorfor universell utforming av ikt. I uutilsynet. Hentet 13. Oktober 2022 fra https://www.uutilsynet.no/veiledning/kvifor-universell-utforming-av-ikt/240
-    </li>
-    <li itemprop="itemListElement">
-      Uutilsynet (a). (2022). Oppgaver. I uutilsynet. Hentet 13. Oktober 2022 fra https://www.uutilsynet.no/om-oss/oppgaver/279
-    </li>
-    <li itemprop="itemListElement">
-      Akerbæk, T. M. (2022). Avdeling for Informatikk, Høgskolen i Østfold.
-    </li>
-  </ol>
-</section>
+  <!--Litteraturliste for UU-->
+  <section itemscope itemtype="https://schema.org/ItemList" class="lit-liste">
+    <h3 itemprop="name">Litteraturliste</h3>
+    <ol>
+      <li itemprop="itemListElement">
+        Uutilsynet (b). (2022). Hvorfor universell utforming av ikt. I uutilsynet. Hentet 13. Oktober 2022 fra https://www.uutilsynet.no/veiledning/kvifor-universell-utforming-av-ikt/240
+      </li>
+      <li itemprop="itemListElement">
+        Uutilsynet (a). (2022). Oppgaver. I uutilsynet. Hentet 13. Oktober 2022 fra https://www.uutilsynet.no/om-oss/oppgaver/279
+      </li>
+      <li itemprop="itemListElement">
+        Akerbæk, T. M. (2022). Avdeling for Informatikk, Høgskolen i Østfold.
+      </li>
+    </ol>
+  </section>
 
-<!--starten på SEO artikkel-->
+  <!--starten på SEO artikkel-->
   <article itemscope itemtype="https://schema.org/Article" class="artikkel-tekst">
     <h2 itemprop="name">SEO</h2>
     <p itemprop="description">
@@ -237,9 +244,8 @@
       SEO eller søkemotoroptimalisering går ut på hvor optimal er nettsiden din i følge google eller andre søkemotorer. Hvor lett tilgjengelig er innholdet, er det blitt brukt riktig struktur av html osv. SEO er noe man konstant må jobbe med for å forbedre, med tanke på algoritme oppdateringer. Man kan tenke på det som en evig runddans, eller en hund som jager sin egen hale, det tar aldri slutt.
     </p>
   </article>
-  <!--Sluten på SEO artikkel-->
 
-  <!--Tabellen over de ulike SEO løsningene-->
+  <!--Tabell over SEO-->
 	<section itemscope itemtype="https://schema.org/Table" class="uu-seo-tabell">
     <div class="tabell-styling tabell-topp"></div>
     <div itemprop="about" class="tabell-styling tabell-topp"><h2>Fordeler</h2></div>
@@ -306,7 +312,7 @@
 		</div>
   </section>
 
-  <!--Litteraturliste-->
+  <!--Litteraturliste for SEO-->
   <section itemscope itemtype="https://schema.org/ItemList" class="lit-liste">
     <h3 itemprop="name">Litteraturliste</h3>
     <ol>
@@ -318,16 +324,16 @@
 
   <!--Delingskanppen-->
   <!--https://www.youtube.com/watch?v=tDtipstdYBA-->
-<div class="share">
-  <div class="share-button">
-    <span class="share-button">
-      <i class="fa-solid fa-share"> Del</i>
-    </span>
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-  </div>
+  <div class="share">
+    <div class="share-button">
+      <span class="share-button">
+        <i class="fa-solid fa-share"> Del</i>
+      </span>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+    </div>
   </div>
 
   <!--Footer med copyright informasjon-->
@@ -340,6 +346,7 @@
       <a href="#"><i class="fa-brands fa-pinterest"></i></a>
     </div>
   </footer>
+
   <!--Hentet fra: https://swiperjs.com/get-started-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>

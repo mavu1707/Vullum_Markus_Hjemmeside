@@ -301,6 +301,12 @@ footer a{
   margin: 0.2rem;
 }
 
+footer h3{
+  color: var(--icon-color);
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
 /*Bilde animasjoner*/
 .placeholder{
   transition: transform .3s ease;

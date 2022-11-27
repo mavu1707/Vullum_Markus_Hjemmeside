@@ -69,7 +69,7 @@ header{
   grid-area: header;
   width: 100%;
   height: 100vh;
-  background-image: url('img/header.jpg');
+  background-image: var(--bakgrunn-top);
   background-position: bottom;
   background-size: cover;
   display: flex;
@@ -215,7 +215,7 @@ main{
   height: 60vh;
   padding-left: 6rem;
   /*Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/vmTs5om50gg)*/
-  background-image: url('img/placeholder-2.jpg'); 
+  background-image: var(--bakgrunn-main); 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -233,12 +233,12 @@ main{
   color: var(--primary-color);
 }
 
-/*kontakt oss dien blir stylet*/
+/*kontakt oss siden blir stylet*/
 .kontaktoss-side{
   width: 100%;
   height: 20vh;
   /*Fra unsplash, attribute er ikke nødvendig (https://unsplash.com/photos/vmTs5om50gg)*/
-  background-image: url('img/placeholder-2.jpg'); 
+  background-image: var(--bakgrunn-main); 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -276,7 +276,6 @@ main{
 
 /*Artikklene blir stylet*/
 main article{
-  background-color: var(--primary-color);
   padding: 2rem;
   flex: 1;
 }
@@ -625,6 +624,9 @@ footer a{
   --icon-color: #fff;
   --text-color: #000000;
   --footer-color: #5c5c5c;
+
+  --bakgrunn-top: url(img/header.jpg);
+  --bakgrunn-main: url(img/main-article.jpg);
 }
 
 .dark-theme{
@@ -636,6 +638,14 @@ footer a{
   --icon-color:#fff;
   --text-color: #fff;
   --footer-color: #000000;
+
+  /*Hentet fra unsplash, attributt ikke nødvendig*/
+  /*https://unsplash.com/photos/KtQc6no1B4k*/
+  --bakgrunn-top: url(img/header-2.jpg);
+
+  /*Hentet fra unsplash, attributt ikke nødvendig*/
+  /*https://unsplash.com/photos/0Zs62-dTmLI*/
+  --bakgrunn-main: url(img/main-article-2.jpg);
 }
 
 /*Styling til mobil, dette skjer ikke med mindre nettsiden blir mindre enn 850px bred*/

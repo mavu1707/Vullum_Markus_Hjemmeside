@@ -254,6 +254,10 @@ main{
   color: var(--primary-color);
 }
 
+.kontaktoss-tabell h2{
+  color: var(--primary-color);
+}
+
 .kontaktoss-info{
   display: flex;
   text-align: center;

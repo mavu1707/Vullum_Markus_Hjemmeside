@@ -39,6 +39,7 @@ article{
 p{
   font-size: 1.4rem;
   color: var(--text-color);
+  line-height: 2.2rem;
 }
 
 nav{
@@ -468,6 +469,20 @@ footer h3{
   color: var(--text-color);
 }
 
+/*Analyse tabell*/
+.analyse-tabell{
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  height: 100%;
+  color: var(--text-color);
+}
+
 /*Tabell styling generelt*/
 .tabell-topp{
   background-color: #a5a5a5;
@@ -652,7 +667,7 @@ footer h3{
 .dark-theme{
   --main-bg-color: #363636;
   --primary-color: #000000;
-  --secondary-color: #fff;
+  --secondary-color: rgb(255, 251, 0);
   --kontakt-color: #000000;
   --third-color: #000000;
   --icon-color:#fff;

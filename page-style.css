@@ -356,8 +356,9 @@ footer h3{
 
 /*Animasjon for hoved informasjon*/
 .anim{
-  animation: slideleft 1s linear forwards;
+  animation: slideleft 1s linear;
 }
+
 @keyframes slideleft{
   0%{
     transform: translate(100px);
@@ -639,8 +640,13 @@ footer h3{
   --text-color: #000000;
   --footer-color: #210124;
 
-  --bakgrunn-top: url(img/header.jpg);
-  --bakgrunn-main: url(img/main-article.jpg);
+  /*Hentet fra unsplash, attributt ikke nødvendig*/
+  /*https://unsplash.com/photos/7FqOISWr5V0*/
+  --bakgrunn-top: url(img/header-pic.jpg);
+  
+  /*Hentet fra unsplash, attributt ikke nødvendig*/
+  /*https://unsplash.com/photos/GFqo8rVmH30*/
+  --bakgrunn-main: url(img/main-pic.jpg);
 }
 
 .dark-theme{
@@ -738,7 +744,6 @@ footer h3{
   #logo{
     top: 1rem;
     left: 1rem;
-    margin: ;
   }
 
   .fa-moon::before{
@@ -848,7 +853,7 @@ footer h3{
 
 }
 
-
+/*Styling til for større skjermer*/
 @media only screen and (min-width: 1700px){
 
   html{

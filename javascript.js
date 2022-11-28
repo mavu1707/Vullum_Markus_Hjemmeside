@@ -1,19 +1,3 @@
-/*Hentet fra: https://www.youtube.com/channel/UC2Xd-TjJByJyK2w1zNwY0zQ
-*/
-const observer = new IntersectionObserver((entries) =>{
-  entries.forEach((entry)=>{
-    if (entry.isIntersecting){
-      entry.target.classList.add('show')
-    }else{
-      entry.target.classList.remove('show')
-    }
-  });
-});
-
-const artikler = document.querySelectorAll('.artikler');
-
-artikler.forEach((el) => observer.observe(el))
-
 /* Hentet fra: https://www.youtube.com/watch?v=flItyHiDm7E&t=205s*/
 const hamburger = document.querySelector('.hamburger')
 const navbarLinks = document.querySelector('.navbar-links')

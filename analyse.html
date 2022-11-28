@@ -101,6 +101,10 @@
     <p>
       Dette er en analyse av denne nettsiden, markusvullum.online. Denne analysen består av analyse av nettsidens UU og SEO. Når det kommer til UU kommer jeg til å bruke WCAG 2.0-standarden for nettsidens UU, dette er en liste som omfatter krav en nettside i Norge må ha. Jeg skal også analysere denne nettsidens SEO, altså søkemotoroptimalisering som handler om hvor lett det er å finne fram til denne nettsiden ved et søk. Jeg kommer også til a ta i bruk noen verktøy for å sjekke nettsidens optimalitet. Nedenfor ser du en tabell som viser endringer, før og etter. 
     </p>
+    <p>
+      Som sagt har jeg utført en test og sjekket opp mot WCAG 2.0 kravene som ligger ute på uutilsynets nettsider. På deres nettsiden ligger en rekke krav og de er blitt satt inn i et excel sokument, dette dokumentet har jeg brukt til å sjekke opp mot min egen nettside. Dette excel dokumentet har jeg lastet ned og gjort om til en pdf fil. Det er den som ligger under her. 
+    </p>
+    <a href="wcag-krav.pdf" target="_blank"><p>Her er pdf-filen</p></a>
   </article>
 
   <!--Tabell før og etter-->
@@ -109,6 +113,53 @@
     <div itemprop="about" class="tabell-styling tabell-topp"><h3>Før</h3></div>
     <div itemprop="about" class="tabell-styling tabell-topp"><h3>Etter</h3></div>
 
+    <div itemprop="about" class="tabell-styling">Her har jeg endret spesialtegn som "&lt;", "&amp;" osv til entities. Dette er fordi det skal bli lettere for nettleseren å lese opp disse spesialtegnene, istedenfor å f.eks tro at “&lt;” er en tag (W3Schools, 2022).</div>
+    <div class="tabell-styling">
+      <img class="analyse-img" src="analyse-img/no-entiti.png" alt="Bilde som viser hva som var før entity ble lagt inn i koden">
+    </div>
+    <div class="tabell-styling">
+      <img class="analyse-img" src="analyse-img/with-entity.png" alt="Bilde som viser etter at entities i koden ble lagt til">
+    </div>
+
+    <div itemprop="about" class="tabell-styling zebra">Lagt til mørkt tema på nettsiden. Dette er for å gjøre det lettere for lesere med svakt syn eller som er fargeblinde å lese nettsiden. Bildene illustrerer også hvordan en svaksynt person som sliter med å se forkjell på kontraster vil oppfatte nettsiden med og uten mørkt tema.</div>
+    <div class="tabell-styling zebra">
+      <img class="analyse-img" src="analyse-img/no-darkmode.png" alt="Bildet viser hvordan nettsiden for en med svakt syn og som sliter med kontraster vil se nettsiden.">
+    </div>
+    <div class="tabell-styling zebra">
+      <img class="analyse-img" src="analyse-img/with-darkmode.png" alt="Bildet viser hvordan mørkt tema oppleves for samme person med svakt syn og som sliter med kontraster.">
+    </div>
+
+    <div itemprop="about" class="tabell-styling">HTML validator fra W3C er brukt (W3C, 2022). Denne nettsiden blir brukt til å validere HTML koden som blir skrevet. F.eks her er slutt tagen på et div element som mangler. Dette kommar da frem i validatoren som gjør det enkelt å rette opp i feil.</div>
+    <div class="tabell-styling">
+      <img class="analyse-img" src="analyse-img/no-validator.png" alt="Bildet viser en feil med rød error i html validatoren">
+    </div>
+    <div class="tabell-styling">
+      <img class="analyse-img" src="analyse-img/with-validator.png" alt="Bilde viser etter at feilen er rettet opp, som viser grønt at dokumentet ikke har noen mangler">
+    </div>
+
+    <div itemprop="about" class="tabell-styling zebra">Lighthouse er en applikasjon som som man kan legge til i chrome. Lighthouse gjør en analyse av selve nettsiden din og gir deg en rapport tilbake med tilbakemeldinger på hva som er bra og dårlig. Her kan du se at først har jeg veldig store bilder noe som tar mye ekstra data og plass.</div>
+    <div class="tabell-styling zebra">
+      <img class="analyse-img" src="analyse-img/no-lighthouse.png" alt="Bilde viser at siden har bilder som tar mye filplass å laste inn på nettsiden.">
+    </div>
+    <div class="tabell-styling zebra">
+      <img class="analyse-img" src="analyse-img/with-contrast.png" alt="Bilde viser at etter at bildene har blitt mindre er lastetiden til siden gått ned.">
+    </div>
+
+    <div itemprop="about" class="tabell-styling">UUtilsynet har på sin nettside krav som følger WCAG 2.0 sine krav for et nettsted, der er det rangeringer fra A- AA- til AAA-krav. Før endringene scoret jeg ganske dårlig på navigasjon på nettstedet med tab tasten. Men det har nå blitt fikset på.</div>
+    <div class="tabell-styling">
+      <img class="analyse-img" src="analyse-img/no-entiti.png" alt="VET IKKE XXX">
+    </div>
+    <div class="tabell-styling">
+      <img class="analyse-img" src="analyse-img/with-entity.png" alt="VET IKKE XXX">
+    </div>
+
+    <div itemprop="about" class="tabell-styling zebra">WAVE er en nettside som sjekker hvor tilgjengelig nettsiden min er, her kan du se at før endringer har jeg 8 error og 15 kontrast error. Det vil si at for fargeblinde som kan slite med kontraster vil slite med å lese på nettsiden min. Men ved siden av kan du se kontrasten er veldig bra hvis man bytter modus. </div>
+    <div class="tabell-styling zebra">
+      <img class="analyse-img" src="analyse-img/no-contrast.png" alt="Bilde viser 15 contrast Errors på nettsiden.">
+    </div>
+    <div class="tabell-styling zebra">
+      <img class="analyse-img" src="analyse-img/with-contrast.png" alt="Bilde viser at kontrasten er bra etter dark mode er skrudd på.">
+    </div>
   </section>
 
   <!--Delingskanppen-->

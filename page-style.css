@@ -476,11 +476,16 @@ footer h3{
   margin-right: auto;
   max-width: 1000px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   margin-top: 5rem;
   margin-bottom: 5rem;
   height: 100%;
   color: var(--text-color);
+}
+
+.analyse-img{
+  width: 20rem;
+  border-radius: 1rem;
 }
 
 /*Tabell styling generelt*/
@@ -798,6 +803,11 @@ footer h3{
     overflow: scroll;
   }
   .uu-seo-tabell{
+    display: block;
+    font-size: 1.2rem;
+    overflow: scroll;
+  }
+  .analyse-tabell{
     display: block;
     font-size: 1.2rem;
     overflow: scroll;

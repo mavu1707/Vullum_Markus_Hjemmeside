@@ -83,28 +83,28 @@
   </div>
 
   <!--Intro til analyse-->
-  <section class="main-artikel">
+  <section itemscope itemtype="https://schema.org/Article" class="main-artikel">
     <div class="artikel-tekst">
-      <h2>Analyse av dette nettstedet</h2>
-        <p class="introtekst">
+      <h2 itemprop="name">Analyse av dette nettstedet</h2>
+        <p itemprop="description" class="introtekst">
           Her er en analyse av dette nettstedet, der jeg går igjennom bruken av SEO og UU. Bruker diverse verktøy for å komme fram til svarene mine. 
         </p>
-        <p class="skrevet-av">
+        <p itemprop="author" class="skrevet-av">
           Skrevet av Markus Vullum
         </p>
     </div>
   </section>
 
   <!--Starten på Analysen-->
-  <article class="artikkel-tekst">
-    <h2>Analyse</h2>
-    <p>
+  <article itemscope itemtype="https://schema.org/Article" class="artikkel-tekst">
+    <h2 itemprop="name">Analyse</h2>
+    <p itemprop="description">
       Dette er en analyse av denne nettsiden, markusvullum.online. Denne analysen består av analyse av nettsidens UU og SEO. Når det kommer til UU kommer jeg til å bruke WCAG 2.0-standarden for nettsidens UU, dette er en liste som omfatter krav en nettside i Norge må ha. Jeg skal også analysere denne nettsidens SEO, altså søkemotoroptimalisering som handler om hvor lett det er å finne fram til denne nettsiden ved et søk. Jeg kommer også til a ta i bruk noen verktøy for å sjekke nettsidens optimalitet. Nedenfor ser du en tabell som viser endringer, før og etter. 
     </p>
-    <p>
+    <p itemprop="description">
       Som sagt har jeg utført en test og sjekket opp mot WCAG 2.0 kravene som ligger ute på uutilsynets nettsider. På deres nettsiden ligger en rekke krav og de er blitt satt inn i et excel sokument, dette dokumentet har jeg brukt til å sjekke opp mot min egen nettside. Dette excel dokumentet har jeg lastet ned og gjort om til en pdf fil. Det er den som ligger under her. 
     </p>
-    <a href="wcag-krav.pdf" target="_blank"><p>Her er pdf-filen</p></a>
+    <a href="wcag-krav.pdf" target="_blank"><p tabindex="0" class="pdf">Her er pdf-filen</p></a>
   </article>
 
   <!--Tabell før og etter-->
@@ -145,12 +145,12 @@
       <img class="analyse-img" src="analyse-img/with-contrast.png" alt="Bilde viser at etter at bildene har blitt mindre er lastetiden til siden gått ned.">
     </div>
 
-    <div itemprop="about" class="tabell-styling">UUtilsynet har på sin nettside krav som følger WCAG 2.0 sine krav for et nettsted, der er det rangeringer fra A- AA- til AAA-krav. Før endringene scoret jeg ganske dårlig på navigasjon på nettstedet med tab tasten. Men det har nå blitt fikset på.</div>
+    <div itemprop="about" class="tabell-styling">UUtilsynet har på sin nettside krav som følger WCAG 2.0 sine krav for et nettsted, der er det rangeringer fra A- AA- til AAA-krav. Før endringene scoret jeg ganske dårlig på navigasjon på nettstedet med tab tasten. Det som er fikset på er at dersom bruker bruker tab tasten for å bevege seg rundt på nettstedet, kommer det som er i fokus til å få en orange tykk ytterlinje rundt seg. I motsettning til en svart og tynn ytterlinje som er default. </div>
     <div class="tabell-styling">
-      <img class="analyse-img" src="analyse-img/no-entiti.png" alt="VET IKKE XXX">
+      <img class="analyse-img" src="analyse-img/no-focus.png" alt="VET IKKE XXX">
     </div>
     <div class="tabell-styling">
-      <img class="analyse-img" src="analyse-img/with-entity.png" alt="VET IKKE XXX">
+      <img class="analyse-img" src="analyse-img/with-focus.png" alt="VET IKKE XXX">
     </div>
 
     <div itemprop="about" class="tabell-styling zebra">WAVE er en nettside som sjekker hvor tilgjengelig nettsiden min er, her kan du se at før endringer har jeg 8 error og 15 kontrast error. Det vil si at for fargeblinde som kan slite med kontraster vil slite med å lese på nettsiden min. Men ved siden av kan du se kontrasten er veldig bra hvis man bytter modus. </div>

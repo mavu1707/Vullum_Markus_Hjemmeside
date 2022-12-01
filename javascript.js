@@ -23,7 +23,9 @@ icon.onclick = function(){
 }
 
 /*https://github.com/imagemin/imagemin-webp*/
-/*For bedre ytelse av bilder, konverterer .jpeg og .png til .WebP */
+
+/*For bedre ytelse av bilder, konverterer .jpeg og .png til .WebP
+
 import imagemin from 'imagemin';
 import imageminWebp from 'imagemin-webp';
 
@@ -33,8 +35,6 @@ import imageminWebp from 'imagemin-webp';
 		plugins: [
 			imageminWebp({quality: 50})
 		]
-	});
-
-	console.log('Images optimized');
-})();
+	})
+})()*/
 

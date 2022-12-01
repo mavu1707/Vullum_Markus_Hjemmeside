@@ -659,6 +659,7 @@ footer h3{
   --icon-color: #F7F9F7;
   --text-color: #000000;
   --footer-color: #210124;
+  --link-color: blue;
 
   /*Hentet fra unsplash, attributt ikke nødvendig*/
   /*https://unsplash.com/photos/7FqOISWr5V0*/
@@ -678,6 +679,7 @@ footer h3{
   --icon-color:#fff;
   --text-color: #fff;
   --footer-color: #000000;
+  --link-color: rgb(255, 251, 0);
 
   /*Hentet fra unsplash, attributt ikke nødvendig*/
   /*https://unsplash.com/photos/KtQc6no1B4k*/
@@ -690,6 +692,10 @@ footer h3{
 
 :focus {
   outline: 0.5rem solid orange;
+}
+
+.pdf{
+  color: var(--link-color);
 }
 
 .pdf:focus{
